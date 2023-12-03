@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="48" width="48">
+<g opacity="0.8" style="mix-blend-mode:multiply">
+<circle fill="url(#paint0_linear_1427_3182)" transform="rotate(45 19.0312 28.9689)" r="12.773" cy="28.9689" cx="19.0312"></circle>
+<circle stroke-width="0.4" stroke="#B992FF" transform="rotate(45 19.0312 28.9689)" r="12.773" cy="28.9689" cx="19.0312"></circle>
+</g>
+<g opacity="0.8" style="mix-blend-mode:multiply">
+<circle fill="url(#paint1_linear_1427_3182)" transform="rotate(45 19.0312 28.9689)" r="12.773" cy="28.9689" cx="19.0312"></circle>
+<circle stroke-width="0.4" stroke="#B992FF" transform="rotate(45 19.0312 28.9689)" r="12.773" cy="28.9689" cx="19.0312"></circle>
+</g>
+<g opacity="0.8" style="mix-blend-mode:multiply">
+<circle fill="url(#paint2_linear_1427_3182)" transform="rotate(45 19.0312 28.9689)" r="12.773" cy="28.9689" cx="19.0312"></circle>
+<circle stroke-width="0.4" stroke="#B992FF" transform="rotate(45 19.0312 28.9689)" r="12.773" cy="28.9689" cx="19.0312"></circle>
+</g>
+<g opacity="0.5" style="mix-blend-mode:overlay">
+<circle fill="#F2F2F2" transform="rotate(45 19.0312 28.9689)" r="12.773" cy="28.9689" cx="19.0312"></circle>
+<circle stroke-width="0.4" stroke="#B992FF" transform="rotate(45 19.0312 28.9689)" r="12.773" cy="28.9689" cx="19.0312"></circle>
+</g>
+<g opacity="0.8" style="mix-blend-mode:multiply">
+<circle fill="url(#paint3_linear_1427_3182)" transform="rotate(-45 28.9686 19.0311)" r="12.773" cy="19.0311" cx="28.9686"></circle>
+<circle stroke-width="0.4" stroke="#FEB58D" transform="rotate(-45 28.9686 19.0311)" r="12.773" cy="19.0311" cx="28.9686"></circle>
+</g>
+<g opacity="0.8" style="mix-blend-mode:multiply">
+<circle fill="url(#paint4_linear_1427_3182)" transform="rotate(-45 28.9686 19.0311)" r="12.773" cy="19.0311" cx="28.9686"></circle>
+<circle stroke-width="0.4" stroke="#FEB58D" transform="rotate(-45 28.9686 19.0311)" r="12.773" cy="19.0311" cx="28.9686"></circle>
+</g>
+<g opacity="0.8" style="mix-blend-mode:multiply">
+<circle fill="url(#paint5_linear_1427_3182)" transform="rotate(-45 28.9686 19.0311)" r="12.773" cy="19.0311" cx="28.9686"></circle>
+<circle stroke-width="0.4" stroke="#FEB58D" transform="rotate(-45 28.9686 19.0311)" r="12.773" cy="19.0311" cx="28.9686"></circle>
+</g>
+<g opacity="0.5" style="mix-blend-mode:overlay">
+<circle fill="#FAEAA5" transform="rotate(-45 28.9686 19.0311)" r="12.773" cy="19.0311" cx="28.9686"></circle>
+<circle stroke-width="0.4" stroke="#FEB58D" transform="rotate(-45 28.9686 19.0311)" r="12.773" cy="19.0311" cx="28.9686"></circle>
+</g>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" y2="15.9959" x2="19.076" y1="46.9697" x1="19.0772" id="paint0_linear_1427_3182">
+<stop stop-color="#8968FF"></stop>
+<stop stop-color="#E8BBFF" offset="0.815666"></stop>
+</linearGradient>
+<linearGradient gradientUnits="userSpaceOnUse" y2="15.9959" x2="19.076" y1="46.9697" x1="19.0772" id="paint1_linear_1427_3182">
+<stop stop-color="#8968FF"></stop>
+<stop stop-color="#E8BBFF" offset="0.815666"></stop>
+</linearGradient>
+<linearGradient gradientUnits="userSpaceOnUse" y2="15.9959" x2="19.076" y1="46.9697" x1="19.0772" id="paint2_linear_1427_3182">
+<stop stop-color="#8968FF"></stop>
+<stop stop-color="#E8BBFF" offset="0.815666"></stop>
+</linearGradient>
+<linearGradient gradientUnits="userSpaceOnUse" y2="6.05817" x2="28.9686" y1="32.0041" x1="28.9686" id="paint3_linear_1427_3182">
+<stop stop-color="#FEB58D"></stop>
+<stop stop-color="#FFE782" offset="1"></stop>
+</linearGradient>
+<linearGradient gradientUnits="userSpaceOnUse" y2="6.05817" x2="28.9686" y1="32.0041" x1="28.9686" id="paint4_linear_1427_3182">
+<stop stop-color="#FEB58D"></stop>
+<stop stop-color="#FFE782" offset="1"></stop>
+</linearGradient>
+<linearGradient gradientUnits="userSpaceOnUse" y2="6.05817" x2="28.9686" y1="32.0041" x1="28.9686" id="paint5_linear_1427_3182">
+<stop stop-color="#FEB58D"></stop>
+<stop stop-color="#FFE782" offset="1"></stop>
+</linearGradient>
+</defs>
+</svg>
