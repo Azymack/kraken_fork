@@ -1,5 +1,5 @@
-import { Base } from '../templates/Base';
+import { Landing } from '../templates/Landing';
 
-const Index = () => <Base />;
+const Index = () => <Landing />;
 
 export default Index;
