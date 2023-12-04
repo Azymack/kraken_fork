@@ -1,9 +1,18 @@
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 
-import { Background } from '../background/Background';
+import { Logo } from '../components/Logo';
 import { CenteredFooter } from '../footer/CenteredFooter';
 import { Section } from '../layout/Section';
-import { Logo } from './Logo';
+
+type IBackgroundProps = {
+  children: ReactNode;
+  color: string;
+};
+
+const Background = (props: IBackgroundProps) => (
+  <div className={props.color}>{props.children}</div>
+);
 
 const Footer = () => (
   <Background color="bg-gray-100">

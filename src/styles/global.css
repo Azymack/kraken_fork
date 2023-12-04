@@ -3,3 +3,16 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer base {
+  .bg-theme-color {
+    background-color: #5841d8!important;
+  }
+
+  a, button {
+    outline: none!important;
+  }
+  /* body {
+    font-family: Celias;
+  } */
+}
