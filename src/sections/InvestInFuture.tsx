@@ -3,6 +3,7 @@ import { Section } from '@/layout/Section';
 
 const InvestInFuture = () => {
   return (
+<<<<<<< HEAD
     <Section>
       <div className="mx-auto flex max-w-2xl items-center justify-between lg:max-w-4xl ">
         <dl className="mx-auto grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -10,13 +11,26 @@ const InvestInFuture = () => {
             <h2 className="text-dark mb-5 text-4xl font-bold !leading-[1.208] dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
               Invest in your future
             </h2>
+=======
+    <Section
+      desktopBackgroundImage="./assets/images/snakes-from-left-bottom-2880x1594.png"
+      mobileBackgroundImage="./assets/images/snakes-from-right-top-2151x1011.png"
+    >
+      <div className="mx-auto flex max-w-2xl items-center justify-between p-6 sm:mt-20 lg:mt-12 lg:max-w-4xl lg:text-left">
+        <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div className="relative flex flex-col justify-center">
+            <h2 className="">Invest in your future</h2>
+>>>>>>> 398956e34104d69672a4db92d952b0d56f6878fe
             <h4>
               Grow your portfolio in a more fair and open financial system.{' '}
               <b>Start with just $10.</b>
             </h4>
-            <RoundedButton text="Sign up" onclick={() => {}}></RoundedButton>
+            <div>
+              <RoundedButton text="Sign up" onclick={() => {}}></RoundedButton>
+            </div>
           </div>
           <div className="relative">
+<<<<<<< HEAD
             <div>
               <video
                 autoPlay
@@ -93,6 +107,20 @@ const InvestInFuture = () => {
                 </span>
               </a> */}
             </div>
+=======
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              style={{ margin: 'auto', width: '278px', height: '579px;' }}
+            >
+              <source
+                src="./assets/videos/cell-phone-portrait.mp4"
+                type="video/mp4"
+              />
+            </video>
+>>>>>>> 398956e34104d69672a4db92d952b0d56f6878fe
           </div>
         </dl>
       </div>
