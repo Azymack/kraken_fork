@@ -1,5 +1,5 @@
-import { BuildPortfolio } from '@/sections/BuildPortfolio';
 import { BuyCryptoInMinutes } from '@/sections/BuyCryptoInMinutes';
+import { CryptoPortfolio } from '@/sections/CryptoPortfolio';
 import { ForEveryone } from '@/sections/ForEveryone';
 import { InvestInFuture } from '@/sections/InvestInFuture';
 import { KrakenPro } from '@/sections/KrakenPro';
@@ -15,7 +15,7 @@ const Article = () => {
         <InvestInFuture />
         <ForEveryone />
         <BuyCryptoInMinutes />
-        <BuildPortfolio />
+        <CryptoPortfolio />
         <WhyKraken />
         <StakingCrypto />
         <KrakenPro />

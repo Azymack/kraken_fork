@@ -75,6 +75,7 @@ const BuyCryptoInMinutes = () => {
                   text="Buy crypto"
                 />
               </div>
+              <VerticalSpacerInPixel pixel="h-[40px]" />
             </div>
           </div>
         </MelaniWrapper>

@@ -15,5 +15,68 @@
 }
 
 @layer components {
+  .portfolio-div {
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 36px;
+    width: 1290.62px;
+  }
 
+  .portfolio-blur {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  }
+
+  .floating-row {
+    --animation-duration: 100s;
+    width: max-content;
+    display: flex;
+    overflow: hidden;
+    flex-flow: row;
+    column-gap: 28px;
+    padding-left: 28px;
+  }
+
+  .floating-element {
+    --distance-to-the-start: -159.234375px;
+    --distance-to-the-end: 1418.4609375px;
+    --element-position: -27.984375px;
+    animation-delay: -98.2262s;
+    animation-name: fc-baacefea-1;
+    animation-duration: var(--animation-duration);
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .melani-cta {
+    color: #101114;
+    display: flex;
+    padding: 8px 12px;
+    flex-grow: 1;
+    font-size: 16px;
+    box-sizing: border-box;
+    min-height: 40px;
+    align-items: center;
+    font-weight: 500;
+    line-height: 16px;
+
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Celias;
+    background-color: #fff;position: relative;
+    transition: opacity .2s linear 0s;
+    border: 2px solid transparent;
+
+  }
+  
+  .crypton{
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 8px;
+  }
 }
