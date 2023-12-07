@@ -112,6 +112,42 @@
     border-radius: 0px;
   }
 
+  .pro-gradient {
+    background-image: radial-gradient(circle at center top, rgb(49, 35, 76) 10%, rgb(49, 35, 76) 0%, transparent 50%, transparent 100%), linear-gradient(rgb(25, 27, 39), rgb(25, 27, 39));
+    background-color: rgb(25, 27, 39);
+  }
+
+  .stat-div {
+    display: flex;
+    gap: 60px 30px;
+    flex-flow: wrap;
+    align-items: unset;
+    justify-content: center;
+  }
+
+  .black-card {
+    width: 100%;
+    max-width: 370px;
+    background: rgb(46, 51, 80);
+    box-sizing: border-box;
+    margin-left: 0px;
+    padding: 1px;
+    margin-right: 0px;
+    border-radius: 8px;
+  }
+
+  .black-card-in {
+    width: 100%;
+    height: 100%;
+    background: rgb(32, 35, 51);
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 16px;
+    border-radius: 8px;
+    padding-right: 16px;
+  }
+
   @media (min-width: 600px) {
     .crypto-card {
       width: 270px;

@@ -29,6 +29,7 @@ module.exports = {
         white: '#FEFEFE',
         blur: '#A791F9',
         grey: '#AFAFAF',
+        bshu: '#898989',
         greyblur: '#EEEEEE',
         purpleblur: '#4631c9',
         backgrey: 'rgb(238, 236, 251)',

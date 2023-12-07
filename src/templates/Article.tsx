@@ -1,3 +1,4 @@
+import { BlackCards } from '@/sections/BlackCards';
 import { BuyCryptoInMinutes } from '@/sections/BuyCryptoInMinutes';
 import { CryptoPortfolio } from '@/sections/CryptoPortfolio';
 import { ForEveryone } from '@/sections/ForEveryone';
@@ -19,6 +20,7 @@ const Article = () => {
         <WhyKraken />
         <StakingCrypto />
         <KrakenPro />
+        <BlackCards />
         <StartJourney />
       </div>
     </article>
