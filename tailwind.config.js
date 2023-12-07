@@ -27,6 +27,7 @@ module.exports = {
         blur: '#A791F9',
         greyblur: '#EEEEEE',
         purpleblur: '#4631c9',
+        backgrey: 'rgb(238, 236, 251)',
         primary: {
           100: '#472fc2',
           200: '#FFFFFF',
