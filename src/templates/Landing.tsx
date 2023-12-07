@@ -1,27 +1,17 @@
 import { Meta } from '@/layout/Meta';
-import { BuildPortfolio } from '@/sections/BuildPortfolio';
-import { ForEveryone } from '@/sections/ForEveryone';
-import { KrakenPro } from '@/sections/KrakenPro';
-import { StakingCrypto } from '@/sections/StakingCrypto';
-import { StartJourney } from '@/sections/StartJourney';
-import { WhyKraken } from '@/sections/WhyKraken';
 import { AppConfig } from '@/utils/AppConfig';
 
-import { InvestInFuture } from '../sections/InvestInFuture';
+import { Article } from './Article';
 import { Footer } from './Footer';
 import { Header } from './Header';
 
 const Landing = () => (
-  <div className="text-gray-600 antialiased">
+  <div className="text-primary-300">
     <Meta title={AppConfig.title} description={AppConfig.description} />
+    <div className="relative z-10"></div>
+    <div className="flex flex-col bg-purple"></div>
     <Header />
-    <InvestInFuture />
-    <ForEveryone />
-    <BuildPortfolio />
-    <WhyKraken />
-    <StakingCrypto />
-    <KrakenPro />
-    <StartJourney />
+    <Article />
     <Footer />
   </div>
 );

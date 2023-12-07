@@ -1,5 +1,5 @@
 const KrakenPro = () => {
-  return <>KrakenPro</>;
+  return <div>KrakenPro</div>;
 };
 
 export { KrakenPro };

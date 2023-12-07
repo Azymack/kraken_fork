@@ -14,11 +14,23 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      fontFamily: {
+        celias: ['Celia-Regular', 'sans-serif'],
+        'celias-bold': ['Celia-Bold', 'sans-serif'],
+        'celias-light': ['Celia-Light', 'sans-serif'],
+        'celias-black': ['Celia-Black', 'sans-serif'],
+      },
       colors: {
+        purple: '#5741d9',
+        green: '#3B9B4A',
+        white: '#FEFEFE',
+        blur: '#A791F9',
+        greyblur: '#EEEEEE',
+        purpleblur: '#4631c9',
         primary: {
           100: '#472fc2',
           200: '#FFFFFF',
-          300: '#9ADDFB',
+          300: '#0E0C28',
           400: '#4FC3F7',
           500: '#03A9F4',
           600: '#0398DC',

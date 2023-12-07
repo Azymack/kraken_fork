@@ -5,14 +5,15 @@
 @tailwind utilities;
 
 @layer base {
-  .bg-theme-color {
-    background-color: #5841d8!important;
+  body {
+    font-family: Celias;
   }
 
   a, button {
-    outline: none!important;
+    outline: none !important;
   }
-  /* body {
-    font-family: Celias;
-  } */
+}
+
+@layer components {
+
 }

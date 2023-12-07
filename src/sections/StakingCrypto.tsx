@@ -1,5 +1,5 @@
 const StakingCrypto = () => {
-  return <>StakingCrypto</>;
+  return <div>StakingCrypto</div>;
 };
 
 export { StakingCrypto };

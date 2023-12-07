@@ -1,5 +1,5 @@
 const StartJourney = () => {
-  return <>StartJourney</>;
+  return <div>StartJourney</div>;
 };
 
 export { StartJourney };

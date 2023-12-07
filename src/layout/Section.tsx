@@ -10,42 +10,31 @@ type ISectionProps = {
 };
 
 const Section = (props: ISectionProps) => {
-  const {
-    yPadding,
-    title,
-    description,
-    desktopBackgroundImage,
-    mobileBackgroundImage,
-    children,
-  } = props;
+  const { yPadding, desktopBackgroundImage, mobileBackgroundImage, children } =
+    props;
 
   let bgRule = '';
   if (desktopBackgroundImage) {
-    bgRule = `bg-[${desktopBackgroundImage}]`;
+    bgRule = `bg-cover bg-[${desktopBackgroundImage}]`;
     if (mobileBackgroundImage) {
-      bgRule = `lg:bg-[${desktopBackgroundImage}] bg-[${mobileBackgroundImage}]`;
+      bgRule = `bg-cover lg:bg-[${desktopBackgroundImage}] sm:bg-[${mobileBackgroundImage}]`;
     }
   }
 
   return (
     <div
-      className={`mx-auto max-w-screen-lg px-3 text-center ${
-        yPadding || 'py-16'
-      }
-    ${bgRule}`}
+      className={`bg-cover ${bgRule}`}
+      style={{ backgroundImage: `${desktopBackgroundImage}` }}
     >
-      {(title || description) && (
-        <div className="mb-12 text-center">
-          {props.title && (
-            <h2 className="text-4xl font-bold text-gray-900">{title}</h2>
-          )}
-          {props.description && (
-            <div className="mt-4 text-xl md:px-20">{description}</div>
-          )}
+      <div style={{ padding: '50px 0px', position: 'relative' }}>
+        <div
+          className={`box-border flex w-full px-[30px] text-center min-[1040px]:px-[calc((100%-980px)/2)] ${
+            yPadding || 'py-16'
+          }`}
+        >
+          {children}
         </div>
-      )}
-
-      {children}
+      </div>
     </div>
   );
 };
