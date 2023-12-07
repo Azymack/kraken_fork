@@ -74,9 +74,67 @@
 
   }
   
-  .crypton{
+  .crypton {
     border-radius: 100%;
     overflow: hidden;
     margin-right: 8px;
   }
+
+  .crypto-card {
+    color: #242424;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    justify-content: space-between;
+  }
+
+  .crypto-card-in {
+    display: flex;
+    justify-content: center;
+  }
+
+  .crypto-card-description {
+    color: #3B9B4A;
+    font-size: 12px;
+    text-align: end;
+    font-weight: 500;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+
+  .earning-card {
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
+  }
+
+  @media (min-width: 600px) {
+    .crypto-card {
+      width: 270px;
+      filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
+      padding: 34px 24px 24px 24px;
+      box-sizing: border-box;
+      text-align: center;
+      border-radius: 8px;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: white;
+    }
+
+    .crypto-card-in {
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .crypto-card-description {
+      margin-top: 10px;
+    text-align: center;
+    }
+  }
+
 }
