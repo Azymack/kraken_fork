@@ -14,6 +14,9 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      margin: {
+        none: 'unset',
+      },
       fontFamily: {
         celias: ['Celia-Regular', 'sans-serif'],
         'celias-bold': ['Celia-Bold', 'sans-serif'],

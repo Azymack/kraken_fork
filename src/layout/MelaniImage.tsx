@@ -11,7 +11,7 @@ const MelaniImage = (props: MelaniImageProps) => {
     <img
       src={`${props.srcPath}`}
       alt=""
-      className={`${props.additionalClassName} h-full w-full object-cover object-center`}
+      className={`${props.additionalClassName} object-cover object-center`}
     />
   );
 };

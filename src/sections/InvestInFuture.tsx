@@ -10,7 +10,7 @@ const InvestInFuture = () => {
   return (
     <MelaniComponent>
       <div className="relative py-[30px] lg:py-[50px]">
-        <MelaniWrapper>
+        <MelaniWrapper addtionalClassName="flex flex-col lg:flex-row">
           <div className=" flex flex-auto flex-col justify-center lg:pr-[160px]">
             <div className="w-full"></div>
             <div className=" opacity-100">
@@ -69,11 +69,11 @@ const InvestInFuture = () => {
         </MelaniWrapper>
         <div className=" absolute left-0 top-0 -z-10 h-full w-full overflow-hidden bg-backgrey">
           <MelaniImage
-            additionalClassName={`block lg:hidden`}
+            additionalClassName={`h-full w-full block lg:hidden`}
             srcPath="/assets/images/snakes-from-right-top-2151x1011.png"
           />
           <MelaniImage
-            additionalClassName={`hidden lg:block`}
+            additionalClassName={`h-full w-full hidden lg:block`}
             srcPath="/assets/images/snakes-from-left-bottom-2880x1594.png"
           />
         </div>

@@ -1,4 +1,5 @@
 import { BuildPortfolio } from '@/sections/BuildPortfolio';
+import { BuyCryptoInMinutes } from '@/sections/BuyCryptoInMinutes';
 import { ForEveryone } from '@/sections/ForEveryone';
 import { InvestInFuture } from '@/sections/InvestInFuture';
 import { KrakenPro } from '@/sections/KrakenPro';
@@ -13,6 +14,7 @@ const Article = () => {
         <div className="mt-[-100px] h-[100px] bg-purple"></div>
         <InvestInFuture />
         <ForEveryone />
+        <BuyCryptoInMinutes />
         <BuildPortfolio />
         <WhyKraken />
         <StakingCrypto />
