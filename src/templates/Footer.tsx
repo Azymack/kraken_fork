@@ -1,87 +1,554 @@
 import Link from 'next/link';
-import type { ReactNode } from 'react';
 
-import { Logo } from '../components/Logo';
-import { CenteredFooter } from '../footer/CenteredFooter';
-import { Section } from '../layout/Section';
+import { ARoundedTransparent } from '@/components/Buttons/ARoundedTransparent';
+import { ARoundedWhite } from '@/components/Buttons/ARoundedWhite';
+import { MelaniWrapper } from '@/layout/MelaniWrapper';
 
-type IBackgroundProps = {
-  children: ReactNode;
-  color: string;
-};
+// import { Logo } from '../components/Logo';
+// import { CenteredFooter } from '../footer/CenteredFooter';
+// import { Section } from '../layout/Section';
 
-const Background = (props: IBackgroundProps) => (
-  <div className={props.color}>{props.children}</div>
-);
+// type IBackgroundProps = {
+//   children: ReactNode;
+//   color: string;
+// };
+
+// const Background = (props: IBackgroundProps) => (
+//   <div className={props.color}>{props.children}</div>
+// );
 
 const Footer = () => (
-  <Background color="bg-gray-100">
-    <Section>
-      <CenteredFooter
-        logo={<Logo />}
-        iconList={
-          <>
-            <Link href="/">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-              </svg>
-            </Link>
+  <footer className="pb-[160px] font-celias text-[14px] leading-[24px] lg:pt-[88px]">
+    <MelaniWrapper>
+      <div className="footer-menus">
+        <div className="footer-sign-in w-[240px]">
+          <div className="footer-bottom pb-[15px] pt-[6px]">
+            <div className="logo-wrapper">
+              <Link className="footer-logo" href="/">
+                Kraken
+              </Link>
+            </div>
+          </div>
+          <p className="mb-[26px] font-celias text-[22px] font-medium leading-[32px] text-[#C0B9FF]">
+            Take your crypto trading to the next level.
+          </p>
+          <div className="signin-2">
+            <ARoundedWhite
+              additionalClassName=" mb-[8px]"
+              href="sign-up"
+              text="Create account"
+            />
+            <ARoundedTransparent href="sign-in" text="Sign in" />
+          </div>
+          <ul className="mt-[60px] flex w-[160px] list-none flex-row justify-start">
+            <li>
+              <a
+                title="Kraken App"
+                href="https://kraken.app.link/consumer-footer"
+                className="app-icon"
+              >
+                Kraken App
+              </a>
+            </li>
+            <li>
+              <a
+                title="Kraken Pro App"
+                href="https://krakenpro.app.link/pro-footer"
+                className="pro-app-icon"
+              >
+                Kraken Pro App
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul className="footer-primary">
+          <li>
+            <span className="footer-span">Features</span>
+            <ul>
+              <li>
+                <a href="https://nft.kraken.com">NFT Marketplace</a>
+              </li>
+              <li>
+                <a href="/features/margin-trading">Margin Trading</a>
+              </li>
+              <li>
+                <a href="/features/futures">Futures Trading</a>
+              </li>
+              <li>
+                <a href="/features/otc-exchange">OTC Trading</a>
+              </li>
+              <li>
+                <a href="/institutions">Institutions</a>
+              </li>
+              <li>
+                <a href="/features/api-trading">API Trading</a>
+              </li>
+              <li>
+                <a href="/features/staking-coins">Staking Rewards</a>
+              </li>
+              <li>
+                <a href="/features">All features</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span className="footer-span">Company</span>
+            <ul>
+              <li>
+                <a href="/features/security">Kraken Security</a>
+              </li>
+              <li>
+                <a href="/careers">Kraken Careers</a>
+              </li>
+              <li>
+                <a href="https://blog.kraken.com">Kraken Blog</a>
+              </li>
+              <li>
+                <a href="/press">Press Room</a>
+              </li>
+              <li>
+                <a href="https://support.kraken.com/hc/en-us/articles/360027545252-Kraken-Affiliate-program">
+                  Affiliate Program
+                </a>
+              </li>
+              <li>
+                <a href="/referrals">Refer a Friend</a>
+              </li>
+              <li>
+                <a href="https://status.kraken.com/">Kraken Status</a>
+              </li>
+              <li>
+                <a href="https://support.kraken.com/hc/en-us">Support Center</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span className="footer-span">Browse Prices</span>
+            <ul>
+              <li>
+                <a href="/prices/bitcoin">Bitcoin Price</a>
+              </li>
+              <li>
+                <a href="/prices/ethereum">Ethereum Price</a>
+              </li>
+              <li>
+                <a href="/prices/dogecoin">Dogecoin Price</a>
+              </li>
+              <li>
+                <a href="/prices/xrp">XRP Price</a>
+              </li>
+              <li>
+                <a href="/prices/cardano">Cardano Price</a>
+              </li>
+              <li>
+                <a href="/prices/solana">Solana Price</a>
+              </li>
+              <li>
+                <a href="/prices/litecoin">Litecoin Price</a>
+              </li>
+              <li>
+                <a href="/prices">All crypto prices</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span className="footer-span">Popular Markets</span>
+            <ul>
+              <li>
+                <a href="/convert/btc/usd">BTC to USD</a>
+              </li>
+              <li>
+                <a href="/convert/eth/usd">ETH to USD</a>
+              </li>
+              <li>
+                <a href="/convert/doge/usd">DOGE to USD</a>
+              </li>
+              <li>
+                <a href="/convert/xrp/usd">XRP to USD</a>
+              </li>
+              <li>
+                <a href="/convert/ada/usd">ADA to USD</a>
+              </li>
+              <li>
+                <a href="/convert/sol/usd">SOL to USD</a>
+              </li>
+              <li>
+                <a href="/convert/ltc/usd">LTC to USD</a>
+              </li>
+              <li>
+                <a href="/convert">All crypto markets</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span className="footer-span">Buying Guides</span>
+            <ul>
+              <li>
+                <a href="/learn/buy-bitcoin-btc">Buy Bitcoin</a>
+              </li>
+              <li>
+                <a href="/learn/buy-ethereum-eth">Buy Ethereum</a>
+              </li>
+              <li>
+                <a href="/learn/buy-dogecoin-doge">Buy Dogecoin</a>
+              </li>
+              <li>
+                <a href="/learn/buy-ripple-xrp">Buy XRP</a>
+              </li>
+              <li>
+                <a href="/learn/buy-cardano-ada">Buy Cardano</a>
+              </li>
+              <li>
+                <a href="/learn/buy-solana-sol">Buy Solana</a>
+              </li>
+              <li>
+                <a href="/learn/buy-litecoin-ltc">Buy Litecoin</a>
+              </li>
+              <li>
+                <a href="/learn/crypto-guides">All crypto guides</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span className="footer-span">Crypto Education</span>
+            <ul>
+              <li>
+                <a href="/learn/what-is-cryptocurrency">
+                  What is cryptocurrency?
+                </a>
+              </li>
+              <li>
+                <a href="/learn/types-of-cryptocurrency">
+                  Types of cryptocurrency
+                </a>
+              </li>
+              <li>
+                <a href="/learn/what-is-blockchain-technology">
+                  What is a blockchain?
+                </a>
+              </li>
+              <li>
+                <a href="/learn/what-is-bitcoin-btc">What is Bitcoin?</a>
+              </li>
+              <li>
+                <a href="/learn/what-is-ethereum-eth">What is Ethereum?</a>
+              </li>
+              <li>
+                <a href="/learn/what-are-non-fungible-tokens-nft">
+                  What is an NFT?
+                </a>
+              </li>
+              <li>
+                <a href="/learn/what-is-decentralized-autonomous-organization-dao">
+                  What is a DAO?
+                </a>
+              </li>
+              <li>
+                <a href="/learn">Learn crypto</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span className="footer-span">Community</span>
+            <ul className=" w-max-[160px]">
+              <li className="mr-[8px] inline-block leading-[22px]">
+                <Link
+                  rel="noreferrer"
+                  className="fc-bd314af1-3 fc-bd314af1-5 fc-bd314af1-6"
+                  aria-label="Instagram"
+                  target="_blank"
+                  href="https://www.instagram.com/krakenfx/"
+                >
+                  <div className="fc-d63646ce-2 fc-d63646ce-4 fc-bd314af1-4 fc-d63646ce-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      className="fc-d63646ce-7"
+                      data-icon="instagram"
+                      data-prefix="fab"
+                      width="22"
+                      height="16"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      ></path>
+                    </svg>
+                  </div>
+                </Link>
+              </li>
+              <li className="mr-[8px] inline-block leading-[22px]">
+                <Link
+                  rel="noreferrer"
+                  className="fc-bd314af1-3 fc-bd314af1-5 fc-bd314af1-6"
+                  aria-label="Facebook"
+                  target="_blank"
+                  href="https://www.facebook.com/KrakenFX/"
+                >
+                  <div className="fc-d63646ce-2 fc-d63646ce-14 fc-bd314af1-4 fc-d63646ce-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      className="fc-d63646ce-5"
+                      data-icon="facebook-f"
+                      data-prefix="fab"
+                      width="22"
+                      height="16"
+                      viewBox="0 0 320 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                      ></path>
+                    </svg>
+                  </div>
+                </Link>
+              </li>
+              <li className="mr-[8px] inline-block leading-[22px]">
+                <Link
+                  rel="noreferrer"
+                  className="fc-bd314af1-3 fc-bd314af1-5 fc-bd314af1-6"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  href="https://www.linkedin.com/company/krakenfx/"
+                >
+                  <div className="fc-d63646ce-2 fc-d63646ce-15 fc-bd314af1-4 fc-d63646ce-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      className="fc-d63646ce-6"
+                      data-icon="linkedin-in"
+                      data-prefix="fab"
+                      width="22"
+                      height="16"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                      ></path>
+                    </svg>
+                  </div>
+                </Link>
+              </li>
+              <li className="mr-[8px] inline-block leading-[22px]">
+                <Link
+                  rel="noreferrer"
+                  className="fc-bd314af1-3 fc-bd314af1-5 fc-bd314af1-6"
+                  aria-label="Twitter"
+                  target="_blank"
+                  href="https://twitter.com/krakenfx"
+                >
+                  <div className="fc-d63646ce-2 fc-d63646ce-16 fc-bd314af1-4 fc-d63646ce-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      className="fc-d63646ce-8"
+                      data-icon="twitter"
+                      data-prefix="fab"
+                      width="22"
+                      height="16"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                      ></path>
+                    </svg>
+                  </div>
+                </Link>
+              </li>
+              <li className="mr-[8px] inline-block leading-[22px]">
+                <Link
+                  rel="noreferrer"
+                  className="fc-bd314af1-3 fc-bd314af1-5 fc-bd314af1-6"
+                  aria-label="YouTube"
+                  target="_blank"
+                  href="https://www.youtube.com/c/KrakenBitcoinExchange"
+                >
+                  <div className="fc-d63646ce-2 fc-d63646ce-17 fc-bd314af1-4 fc-d63646ce-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="16"
+                      fill="none"
+                      className="fc-d63646ce-9"
+                    >
+                      <path
+                        fill="#fff"
+                        d="M17.624 2.668a2.254 2.254 0 0 0-1.592-1.592C14.628.7 9 .7 9 .7s-5.628 0-7.032.376A2.258 2.258 0 0 0 .376 2.668C0 4.072 0 7 0 7s0 2.928.376 4.332a2.254 2.254 0 0 0 1.592 1.592C3.372 13.3 9 13.3 9 13.3s5.628 0 7.032-.376a2.258 2.258 0 0 0 1.592-1.592C18 9.928 18 7 18 7s0-2.928-.376-4.332ZM7.2 9.7V4.3L11.876 7 7.2 9.7Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </Link>
+              </li>
+              <li className="mr-[8px] inline-block leading-[22px]">
+                <Link
+                  rel="noreferrer"
+                  className="fc-bd314af1-3 fc-bd314af1-5 fc-bd314af1-6"
+                  aria-label="TikTok"
+                  target="_blank"
+                  href="https://www.tiktok.com/@krakenfx"
+                >
+                  <div className="fc-d63646ce-2 fc-d63646ce-18 fc-bd314af1-4 fc-d63646ce-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="18"
+                      fill="none"
+                      className="fc-d63646ce-10"
+                    >
+                      <path
+                        fill="#fff"
+                        d="M15.83 4.383c0-.081-.002-.085-.087-.083-.204 0-.407-.023-.608-.054-.73-.11-3.103-1.354-3.504-3.388-.008-.04-.098-.545-.098-.76 0-.095 0-.097-.095-.097H8.588c-.186 0-.161-.023-.161.163v12.071c0 .151-.004.3-.031.447-.14.778-.538 1.389-1.213 1.805-.584.36-1.22.464-1.894.33-.213-.042-.412-.123-.61-.202a.992.992 0 0 1-.048-.043c-.066-.056-.14-.104-.213-.153-.86-.594-1.267-1.42-1.143-2.453.127-1.047.729-1.76 1.722-2.126.296-.11.609-.155.925-.136.205.01.408.037.605.093.068.019.105-.004.11-.077v-.076c0-.723-.027-2.3-.031-2.304 0-.207 0-.416.006-.623 0-.06-.03-.07-.079-.076a5.848 5.848 0 0 0-2.64.296 5.646 5.646 0 0 0-2.06 1.295 5.608 5.608 0 0 0-1.2 1.724 5.596 5.596 0 0 0-.475 2.838 5.655 5.655 0 0 0 2.167 3.97c.093.074.184.155.296.202l.141.125c.149.111.308.209.476.29 1.03.509 2.117.716 3.262.577 1.486-.182 2.724-.84 3.697-1.975.916-1.068 1.361-2.32 1.37-3.721.012-2.004.002-4.007.004-6.013 0-.047-.027-.115.025-.14.041-.019.082.035.122.062.745.49 1.55.844 2.421 1.043a6.888 6.888 0 0 0 1.54.186c.164 0 .187-.008.187-.172 0-.712-.038-2.657-.036-2.845Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </Link>
+              </li>
+              <li className="mr-[8px] inline-block leading-[22px]">
+                <Link
+                  rel="noreferrer"
+                  className="fc-bd314af1-3 fc-bd314af1-5 fc-bd314af1-6"
+                  aria-label="Reddit"
+                  target="_blank"
+                  href="https://www.reddit.com/r/Kraken/"
+                >
+                  <div className="fc-d63646ce-2 fc-d63646ce-19 fc-bd314af1-4 fc-d63646ce-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="none"
+                      className="fc-d63646ce-11"
+                    >
+                      <path
+                        fill="#fff"
+                        d="M17.996 9.14a1.968 1.968 0 0 0-3.335-1.416c-1.346-.973-3.2-1.599-5.267-1.67l.896-4.222 2.93.623c.037.744.647 1.34 1.401 1.34s1.407-.63 1.407-1.407a1.405 1.405 0 0 0-2.663-.622l-3.273-.696a.35.35 0 0 0-.416.272l-1.002 4.71c-2.097.057-3.981.685-5.343 1.668a1.968 1.968 0 1 0-2.166 3.217c-.03.195-.047.394-.047.596 0 3.028 3.527 5.485 7.878 5.485s7.878-2.457 7.878-5.486c0-.2-.016-.398-.046-.592A1.969 1.969 0 0 0 18 9.14h-.004ZM4.495 10.546c0-.776.632-1.406 1.406-1.406a1.407 1.407 0 1 1-1.406 1.406Zm7.844 3.717c-.96.958-2.799 1.032-3.341 1.032-.542 0-2.38-.074-3.339-1.034a.366.366 0 0 1 .516-.516c.605.604 1.9.82 2.825.82.924 0 2.219-.214 2.825-.82a.366.366 0 0 1 .516.516l-.002.002Zm-.248-2.31a1.407 1.407 0 1 1 0-2.814 1.407 1.407 0 0 1 0 2.814Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </Link>
+              </li>
+              <li className="mr-[8px] inline-block leading-[22px]">
+                <Link
+                  rel="noreferrer"
+                  className="fc-bd314af1-3 fc-bd314af1-5 fc-bd314af1-6"
+                  aria-label="Telegram"
+                  target="_blank"
+                  href="https://t.me/kraken_exchange_official"
+                >
+                  <div className="fc-d63646ce-2 fc-d63646ce-20 fc-bd314af1-4 fc-d63646ce-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="16"
+                      fill="none"
+                      className="fc-d63646ce-12"
+                    >
+                      <path
+                        fill="#fff"
+                        d="M17.965.894c-.065-.188-.142-.24-.262-.286-.263-.1-.708.05-.708.05S1.22 6.33.32 6.957c-.195.135-.26.212-.29.305-.155.447.33.645.33.645l4.065 1.325s.153.022.205-.013c.925-.585 9.306-5.875 9.789-6.053.077-.022.132.003.117.055-.192.68-7.47 7.149-7.47 7.149s-.028.035-.046.075l-.01-.005-.38 4.033s-.16 1.235 1.078 0c.872-.873 1.715-1.6 2.138-1.956 1.397.965 2.902 2.033 3.55 2.59.325.28.6.326.823.318.615-.022.787-.7.787-.7s2.876-11.569 2.97-13.119c.01-.152.023-.247.023-.352 0-.145-.012-.29-.035-.36Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </Link>
+              </li>
+            </ul>
+          </li>
+        </ul>{' '}
+      </div>
 
-            <Link href="/">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z" />
-              </svg>
-            </Link>
-
-            <Link href="/">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" />
-              </svg>
-            </Link>
-
-            <Link href="/">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
-              </svg>
-            </Link>
-
-            <Link href="/">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-            </Link>
-
-            <Link href="/">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.585 5.267c1.834 0 3.558.811 4.824 2.08v.004c0-.609.41-1.068.979-1.068h.145c.891 0 1.073.842 1.073 1.109l.005 9.475c-.063.621.64.941 1.029.543 1.521-1.564 3.342-8.038-.946-11.79-3.996-3.497-9.357-2.921-12.209-.955-3.031 2.091-4.971 6.718-3.086 11.064 2.054 4.74 7.931 6.152 11.424 4.744 1.769-.715 2.586 1.676.749 2.457-2.776 1.184-10.502 1.064-14.11-5.188C-.977 13.521-.847 6.093 5.62 2.245 10.567-.698 17.09.117 21.022 4.224c4.111 4.294 3.872 12.334-.139 15.461-1.816 1.42-4.516.037-4.498-2.031l-.019-.678c-1.265 1.256-2.948 1.988-4.782 1.988-3.625 0-6.813-3.189-6.813-6.812 0-3.659 3.189-6.885 6.814-6.885zm4.561 6.623c-.137-2.653-2.106-4.249-4.484-4.249h-.09c-2.745 0-4.268 2.159-4.268 4.61 0 2.747 1.842 4.481 4.256 4.481 2.693 0 4.464-1.973 4.592-4.306l-.006-.536z" />
-              </svg>
-            </Link>
-
-            <Link href="/">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415a3.3 3.3 0 013.293 3.295A3.303 3.303 0 013.283 24C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z" />
-              </svg>
-            </Link>
-          </>
-        }
-      >
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/">About</Link>
-        </li>
-        <li>
-          <Link href="/">Docs</Link>
-        </li>
-        <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
-        </li>
-      </CenteredFooter>
-    </Section>
-  </Background>
+      <div className="footer-bottom">
+        <div className="copyright-notice fc-da28c4c3-2">
+          <p>© 2011 - 2023 Payward, Inc.</p>
+          <ul className="legal-links">
+            <li data-testid="privacy-link-legal-privacy">
+              <a href="/legal/privacy">Privacy Notice</a>
+            </li>
+            <li data-testid="privacy-link-legal">
+              <a href="/legal">Terms of Service</a>
+            </li>
+            <li data-testid="privacy-link-legal-cookies">
+              <a href="/legal/cookies">Cookies Policy</a>
+            </li>
+            <li data-testid="privacy-link-legal-disclosures">
+              <a href="/legal/disclosures">Disclosures</a>
+            </li>
+          </ul>
+        </div>
+        <div className="language-switcher-wrap fc-da28c4c3-3">
+          <form>
+            <div className="current-language">
+              <label htmlFor="curlang">Language</label>
+            </div>
+            <div className="switcher-menu">
+              <select id="curlang" data-testid="curlang">
+                <option data-testid="optlang-en-us" value="en-us">
+                  U.S. English
+                </option>
+                <option data-testid="optlang-en-gb" value="en-gb">
+                  British English
+                </option>
+                <option data-testid="optlang-es-es" value="es-es">
+                  Español
+                </option>
+                <option data-testid="optlang-fil-ph" value="fil-ph">
+                  Filipino
+                </option>
+                <option data-testid="optlang-fr" value="fr">
+                  Français
+                </option>
+                <option data-testid="optlang-it-it" value="it-it">
+                  Italiano
+                </option>
+                <option data-testid="optlang-pt-br" value="pt-br">
+                  Português
+                </option>
+                <option data-testid="optlang-ru-ru" value="ru-ru">
+                  Русский
+                </option>
+                <option data-testid="optlang-vi-vn" value="vi-vn">
+                  Tiếng Việt
+                </option>
+                <option data-testid="optlang-tr-tr" value="tr-tr">
+                  Türkçe
+                </option>
+                <option data-testid="optlang-uk-ua" value="uk-ua">
+                  Українська
+                </option>
+                <option data-testid="optlang-zh-cn" value="zh-cn">
+                  中文
+                </option>
+                <option data-testid="optlang-ja-jp" value="ja-jp">
+                  日本語
+                </option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div className="footer-disclaimer">
+        <p>
+          <em>
+            These materials are for general information purposes only and are
+            not investment advice or a recommendation or solicitation to buy,
+            sell, stake or hold any cryptoasset or to engage in any specific
+            trading strategy. Kraken does not and will not work to increase or
+            decrease the price of any particular cryptoasset it makes available.
+            Some crypto products and markets are unregulated, and you may not be
+            protected by government compensation and/or regulatory protection
+            schemes. The unpredictable nature of the crypto-asset markets can
+            lead to loss of funds. Tax may be payable on any return and/or on
+            any increase in the value of your cryptoassets and you should seek
+            independent advice on your taxation position. Geographic
+            restrictions may apply.
+          </em>
+        </p>
+      </div>
+    </MelaniWrapper>
+  </footer>
 );
 
 export { Footer };

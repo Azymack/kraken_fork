@@ -9,7 +9,8 @@
     font-family: Celias;
   }
 
-  a, button {
+  a,
+  button {
     outline: none !important;
   }
 }
@@ -27,7 +28,13 @@
   }
 
   .portfolio-blur {
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 15%,
+      black 85%,
+      transparent 100%
+    );
   }
 
   .floating-row {
@@ -68,12 +75,12 @@
     text-align: center;
     text-decoration: none;
     font-family: Celias;
-    background-color: #fff;position: relative;
-    transition: opacity .2s linear 0s;
+    background-color: #fff;
+    position: relative;
+    transition: opacity 0.2s linear 0s;
     border: 2px solid transparent;
-
   }
-  
+
   .crypton {
     border-radius: 100%;
     overflow: hidden;
@@ -95,7 +102,7 @@
   }
 
   .crypto-card-description {
-    color: #3B9B4A;
+    color: #3b9b4a;
     font-size: 12px;
     text-align: end;
     font-weight: 500;
@@ -113,7 +120,14 @@
   }
 
   .pro-gradient {
-    background-image: radial-gradient(circle at center top, rgb(49, 35, 76) 10%, rgb(49, 35, 76) 0%, transparent 50%, transparent 100%), linear-gradient(rgb(25, 27, 39), rgb(25, 27, 39));
+    background-image: radial-gradient(
+        circle at center top,
+        rgb(49, 35, 76) 10%,
+        rgb(49, 35, 76) 0%,
+        transparent 50%,
+        transparent 100%
+      ),
+      linear-gradient(rgb(25, 27, 39), rgb(25, 27, 39));
     background-color: rgb(25, 27, 39);
   }
 
@@ -148,6 +162,207 @@
     padding-right: 16px;
   }
 
+  footer {
+    color: #fff;
+    background-color: #5741d9;
+  }
+
+  .footer-primary {
+    flex-grow: 1;
+    font-family: Celias;
+    font-weight: 700;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-break-inside: avoid;
+    list-style: none;
+  }
+
+  .footer-primary > li {
+    padding: 3px 0 30px;
+    -moz-column-break-inside: avoid;
+    break-inside: avoid-column;
+    page-break-inside: avoid;
+  }
+
+  .footer-span {
+    color: #c0b9ff;
+    margin: 0px 0px 12px 0px;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .footer-menus {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-sign-in {
+    flex-grow: 0;
+    margin: 0 65px 0 0;
+    width: 229px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 6px !important;
+    padding-bottom: 15px;
+  }
+
+  .logo-wrapper {
+    display: block;
+    width: 185px;
+    margin: 0 65px 0 0;
+    height: 20px;
+    background-image: url(/assets/images/logo.svg);
+    background-size: contain;
+    color: transparent;
+    position: relative;
+    overflow: hidden;
+    text-indent: -99999em;
+    background-repeat: no-repeat;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .app-icon {
+    background-image: url(/assets/images/mobile-app.svg);
+    color: transparent;
+    width: 46px;
+    height: 46px;
+    display: block;
+    text-indent: -99999em;
+    margin-right: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .pro-app-icon {
+    background-image: url(/assets/images/pro-app.svg);
+    color: transparent;
+    width: 46px;
+    height: 46px;
+    display: block;
+    text-indent: -99999em;
+    margin-right: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .rating-span {
+    color: #ffffff;
+    margin-right: 10px;
+    pointer-events: none;
+    font-size: 1.125rem;
+    cursor: pointer;
+    display: inline-flex;
+    position: relative;
+    text-align: left;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .star-span {
+    display: flex;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    pointer-events: none;
+  }
+
+  .star-svg {
+    font-size: inherit;
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 21px;
+    /* border-top: solid 1px #6554d6; */
+    padding-bottom: 5px;
+  }
+
+  .copyright-notice {
+    flex-grow: 1;
+    font-size: 10px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    display: flex;
+    opacity: 1 !important;
+  }
+
+  .legal-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .legal-links > li {
+    margin-left: 15px;
+  }
+
+  .legal-links > li > a {
+    border-bottom: 1px solid #9f9cb7;
+  }
+
+  .footer-disclaimer {
+    font-size: 12px;
+    line-height: 140%;
+    margin-top: 20px;
+    padding-top: 32px;
+    position: relative;
+    color: #c8b9fd;
+  }
+
+  @media (max-width: 960px) {
+    footer {
+      padding-top: 26px;
+    }
+
+    .footer-sign-in {
+      width: 100% !important;
+    }
+
+    .signin-2 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-primary {
+      -moz-column-count: 2;
+      column-count: 2;
+    }
+
+    .footer-menus {
+      display: block;
+    }
+
+    .footer-bottom {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .copyright-notice {
+      margin: 18px 0 0;
+      flex-basis: 50%;
+      flex-direction: column;
+    }
+
+    .legal-links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   @media (min-width: 600px) {
     .crypto-card {
       width: 270px;
@@ -169,8 +384,7 @@
 
     .crypto-card-description {
       margin-top: 10px;
-    text-align: center;
+      text-align: center;
     }
   }
-
 }
