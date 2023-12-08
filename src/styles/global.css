@@ -387,4 +387,133 @@
       text-align: center;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    .KBackground_kBackground__IgN0l {
+      background-color: #fff;
+      height: 100vh;
+      margin-left: 74px;
+      position: relative;
+      width: 700px;
+    }
+    .KBackground_kBackground__IgN0l:before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      bottom: 0;
+      left: -73px;
+      width: 74px;
+      background: url("\/assets\/images\/sign-up-left-slice.svg") no-repeat 100%
+        0;
+      background-size: contain;
+    }
+    .KBackground_kBackground__IgN0l:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -339px;
+      width: 340px;
+      background: url("\/assets\/images\/sign-up-right-slice.svg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .LayoutWrap_layout__QH_MY {
+      padding: 1rem;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    .LayoutWrap_layout__QH_MY {
+      padding: 2rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .LayoutWrap_layout__QH_MY {
+      display: flex;
+      flex-direction: column;
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow-x: hidden;
+    }
+  }
+
+  .TopBar_topBar__nHIDk {
+    align-items: center;
+    display: flex;
+    gap: 0.25rem;
+  }
+  @media screen and (max-width: 480px) {
+    .TopBar_topBar__nHIDk {
+      margin-bottom: 1rem;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    .TopBar_topBar__nHIDk {
+      margin-bottom: 2rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .TopBar_topBar__nHIDk {
+      position: relative;
+      z-index: 1;
+      margin: 2rem 3rem 2rem 74px;
+    }
+  }
+
+  .TopBar_rightContent__NpzLC {
+    align-items: center;
+    display: flex;
+    gap: 0.25rem;
+    margin-left: auto;
+  }
+
+  .TopBar_linkFocusLeft__Qyv4d {
+    border-radius: 4px;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+  }
+
+  .FocusDiv_divFocus__75qGP:focus-within {
+    box-shadow: 0 0 0 1px #5d45dc;
+  }
+
+  .Dropdown_dropdown__xqZhR.Dropdown_isOpen__xVom1 .Dropdown_button__HuM1Y,
+  .Dropdown_dropdown__xqZhR:focus-within .Dropdown_button__HuM1Y {
+    border-color: #2824b6;
+  }
+  .Dropdown_dropdown__xqZhR .Dropdown_label__eTuhL {
+    left: 0;
+    transition:
+      color 0.1s,
+      transform 0.1s ease-out;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.1px;
+  }
+  .Dropdown_dropdown__xqZhR .Dropdown_label__eTuhL,
+  .Dropdown_dropdown__xqZhR.Dropdown_dirty__PkoqL .Dropdown_label__eTuhL {
+    font-family:
+      IBM Plex Sans Medium,
+      Helvetica,
+      Arial,
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .Dropdown_dropdown__xqZhR.Dropdown_dirty__PkoqL .Dropdown_label__eTuhL {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+    transition:
+      font-size 0.1s,
+      color 0.1s,
+      transform 0.1s ease-in;
+    transform: translateY(-13px);
+    color: #656565;
+  }
 }

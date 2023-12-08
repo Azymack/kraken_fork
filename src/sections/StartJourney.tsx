@@ -105,13 +105,13 @@ const StartJourney = () => {
           <div className="text-center font-celias text-[12px] font-normal leading-[17px] text-bshu">
             <p>
               <em>
-                Reward rates are subject to change and compliance with Kraken's
-                terms and conditions. These materials are for general
-                information purposes only and are not investment advice or a
-                recommendation or solicitation to buy, sell, stake or hold any
-                cryptoasset or to engage in any specific trading strategy. Some
-                crypto products and markets are unregulated, and you may not be
-                protected by government compensation and/or regulatory
+                Reward rates are subject to change and compliance with
+                Kraken&apos;s terms and conditions. These materials are for
+                general information purposes only and are not investment advice
+                or a recommendation or solicitation to buy, sell, stake or hold
+                any cryptoasset or to engage in any specific trading strategy.
+                Some crypto products and markets are unregulated, and you may
+                not be protected by government compensation and/or regulatory
                 protection schemes. The unpredictable nature of the cryptoasset
                 markets can lead to loss of funds. Tax may be payable on any
                 return and/or on any increase in the value of your cryptoassets
@@ -132,7 +132,7 @@ const StartJourney = () => {
                 leverage involves an element of risk and may not be suitable for
                 everyone. Read{' '}
                 <a className="font-black" href="/legal/disclosures">
-                  Kraken's risk disclosure
+                  Kraken&apos;s risk disclosure
                 </a>{' '}
                 to learn more.
               </em>
