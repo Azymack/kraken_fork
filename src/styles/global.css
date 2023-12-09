@@ -388,15 +388,53 @@
     }
   }
 
+  @media screen and (max-width: 480px) {
+    .sign-upin-back {
+      padding: 1rem;
+    }
+    .sign-upin {
+      background-color: white;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    .sign-upin-back {
+      padding: 2rem;
+    }
+    .sign-upin {
+      background-color: white;
+    }
+  }
   @media screen and (min-width: 768px) {
-    .KBackground_kBackground__IgN0l {
+    .sign-upin-back {
+      display: flex;
+      flex-direction: column;
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow-x: hidden;
+    }
+    .sign-up {
+      box-sizing: border-box;
+      min-height: 100vh;
+      background-image: url(/assets/images/sign-up-bg.svg);
+      background-size: cover;
+    }
+    .sign-in {
+      box-sizing: border-box;
+      min-height: 100vh;
+      background-image: url(/assets/images/sign-in-bg.svg);
+      background-size: cover;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .background-skeleton-height {
       background-color: #fff;
       height: 100vh;
       margin-left: 74px;
       position: relative;
       width: 700px;
     }
-    .KBackground_kBackground__IgN0l:before {
+    .background-skeleton-height:before {
       content: "";
       position: absolute;
       top: -3px;
@@ -407,7 +445,7 @@
         0;
       background-size: contain;
     }
-    .KBackground_kBackground__IgN0l:after {
+    .background-skeleton-height:after {
       content: "";
       position: absolute;
       top: 0;
@@ -418,84 +456,99 @@
       background-size: cover;
     }
   }
-
-  @media screen and (max-width: 480px) {
-    .LayoutWrap_layout__QH_MY {
-      padding: 1rem;
+  .background-skeleton {
+    position: fixed;
+    top: 0;
+  }
+  .background-skeleton:before {
+    background-size: cover;
+    background-position: 100% 100%;
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .background-skeleton {
+      display: none;
     }
   }
-  @media screen and (min-width: 481px) and (max-width: 767px) {
-    .LayoutWrap_layout__QH_MY {
-      padding: 2rem;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .LayoutWrap_layout__QH_MY {
-      display: flex;
-      flex-direction: column;
-      max-width: 1400px;
-      margin-left: auto;
-      margin-right: auto;
-      overflow-x: hidden;
-    }
-  }
-
-  .TopBar_topBar__nHIDk {
+  .sign-upin-header {
     align-items: center;
     display: flex;
     gap: 0.25rem;
   }
   @media screen and (max-width: 480px) {
-    .TopBar_topBar__nHIDk {
+    .sign-upin-header {
       margin-bottom: 1rem;
     }
   }
   @media screen and (min-width: 481px) and (max-width: 767px) {
-    .TopBar_topBar__nHIDk {
+    .sign-upin-header {
       margin-bottom: 2rem;
     }
   }
   @media screen and (min-width: 768px) {
-    .TopBar_topBar__nHIDk {
+    .sign-upin-header {
       position: relative;
       z-index: 1;
       margin: 2rem 3rem 2rem 74px;
     }
   }
 
-  .TopBar_rightContent__NpzLC {
-    align-items: center;
-    display: flex;
-    gap: 0.25rem;
-    margin-left: auto;
+  @media screen and (max-width: 992px) {
+    .common-sign-upin-button {
+      color: #5841d8 !important;
+      border-color: #5841d8 !important;
+    }
   }
 
-  .TopBar_linkFocusLeft__Qyv4d {
-    border-radius: 4px;
-    padding-bottom: 0.25rem;
-    padding-top: 0.25rem;
+  @media screen and (min-width: 768px) {
+    .sign-content {
+      flex-grow: 1;
+      margin-bottom: 3rem;
+      margin-left: 74px;
+      padding-left: 4.5rem;
+      padding-right: 3rem;
+      position: relative;
+      width: 700px;
+      z-index: 1;
+    }
   }
 
-  .FocusDiv_divFocus__75qGP:focus-within {
-    box-shadow: 0 0 0 1px #5d45dc;
+  .sign-content-h1 {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .sign-content-h1 {
+    font-family:
+      Celias Thin,
+      Helvetica,
+      Arial,
+      sans-serif;
+    letter-spacing: normal !important;
+    word-wrap: break-word;
+    font-size: 2.625rem !important;
+    line-height: 1.27 !important;
+    font-weight: 300 !important;
+    color: #242424;
+  }
+  .sign-content-h1:lang(ru-ru),
+  .sign-content-h1:lang(uk-ua),
+  .sign-content-h1:lang(vi-vn) {
+    font-family: Helvetica, Arial, sans-serif;
   }
 
-  .Dropdown_dropdown__xqZhR.Dropdown_isOpen__xVom1 .Dropdown_button__HuM1Y,
-  .Dropdown_dropdown__xqZhR:focus-within .Dropdown_button__HuM1Y {
-    border-color: #2824b6;
-  }
-  .Dropdown_dropdown__xqZhR .Dropdown_label__eTuhL {
-    left: 0;
-    transition:
-      color 0.1s,
-      transform 0.1s ease-out;
-    white-space: nowrap;
-    font-size: 16px;
-    line-height: 1.4;
-    letter-spacing: 0.1px;
-  }
-  .Dropdown_dropdown__xqZhR .Dropdown_label__eTuhL,
-  .Dropdown_dropdown__xqZhR.Dropdown_dirty__PkoqL .Dropdown_label__eTuhL {
+  .wide-switch-container {
+    background-color: #e7e7ea;
+    padding: 0.25rem;
+    margin-bottom: 1.5rem;
+    height: auto !important;
+    border-radius: 0.75rem;
+    font-size: 12px;
+    line-height: 1.33;
     font-family:
       IBM Plex Sans Medium,
       Helvetica,
@@ -503,17 +556,27 @@
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  .Dropdown_dropdown__xqZhR.Dropdown_dirty__PkoqL .Dropdown_label__eTuhL {
-    font-size: 12px;
-    line-height: 1.33;
     letter-spacing: 0.3px;
-    line-height: 1.4;
-    transition:
-      font-size 0.1s,
-      color 0.1s,
-      transform 0.1s ease-in;
-    transform: translateY(-13px);
-    color: #656565;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    color: #0e0c28;
+  }
+
+  .wide-switch-selected {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(20,22,30,.1);
+    border-radius: 8px;
+  }
+
+  .sign-upin-h {
+    font-family: Celias Thin,Helvetica,Arial,sans-serif;
+    letter-spacing: normal!important;
+    word-wrap: break-word;
+    font-size: 2.625rem!important;
+    line-height: 1.27!important;
+    font-weight: 300!important;
+    color: #242424;
   }
 }
