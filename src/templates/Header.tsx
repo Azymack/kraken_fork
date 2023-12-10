@@ -163,6 +163,7 @@ const Header = () => {
                       key={item.title}
                       srcPath={`${item.iconName}${item.iconType}`}
                       title={item.title}
+                      href={item.href}
                       description={item.description}
                     />
                   ))}

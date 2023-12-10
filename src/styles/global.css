@@ -692,4 +692,14 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
+
+  .selection-at-sign-up {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .selection-at-sign-up:hover {
+    background-color: grey;
+  }
+
 }

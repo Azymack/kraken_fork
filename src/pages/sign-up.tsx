@@ -1,5 +1,7 @@
-import { useRouter } from 'next/router';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
+import { ARoundedPurple } from '@/components/Buttons/ARoundedPurple';
 import { ARoundedTransparent } from '@/components/Buttons/ARoundedTransparent';
 import { MelaniInput } from '@/components/Inputs/MelaniInput';
 import { SelectWithSearch } from '@/components/Inputs/SelectWithSearch';
@@ -11,18 +13,87 @@ import { SignHeader } from '@/components/SignUpIn/SignHeader';
 import { WideSwitch } from '@/components/SignUpIn/WideSwitch';
 import { useToggle } from '@/hooks/use-toggle';
 
+type Data = {
+  id: string;
+  title: string;
+};
+
 const SignUp = () => {
-  const router = useRouter();
-  const { type = 'personal' } = router.query;
-  // console.log({ type });
-
-  let toggleArray: [any, any] = ['business', 'personal'];
-
-  if (type === 'personal') toggleArray = ['personal', 'business'];
-
+  const toggleArray: [any, any] = ['personal', 'business'];
   const [category, toggleCategory] = useToggle(toggleArray);
-  // console.log(toggleArray);
-  // setCategory(type);
+  const [currentCountry, setCurrentCountry] = useState('');
+  const [currentState, setCurrentState] = useState('');
+
+  const [countries, setCountries] = useState<Data[]>([]);
+  const [states, setStates] = useState<Data[]>([]);
+  const [countryLoading, setCountryLoading] = useState<boolean>(true);
+  const [stateLoading, setStateLoading] = useState<boolean>(true);
+
+  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  useEffect(() => {
+    // you can just get the full list of countries from backend due to CORS issue
+
+    setCountries([
+      {
+        id: 'US',
+        title: 'United States',
+      },
+      {
+        id: 'UK',
+        title: 'United Kingdom',
+      },
+      {
+        id: 'AU',
+        title: 'Australia',
+      },
+      {
+        id: 'IN',
+        title: 'India',
+      },
+      {
+        id: 'IR',
+        title: 'Ireland',
+      },
+      {
+        id: 'JP',
+        title: 'Japan',
+      },
+      {
+        id: 'FR',
+        title: 'France',
+      },
+    ]);
+
+    setCountryLoading(false);
+  }, []);
+
+  useEffect(() => {
+    // you can just get the full list of states from backend due to CORS issue
+
+    setStates([
+      {
+        id: 'AR',
+        title: 'Arizona',
+      },
+      {
+        id: 'CA',
+        title: 'California',
+      },
+      {
+        id: 'GA',
+        title: 'Georgia',
+      },
+      {
+        id: 'NC',
+        title: 'North Carolina',
+      },
+    ]);
+
+    setCountryLoading(false);
+  }, []);
 
   return (
     <div className="sign-up text-[#0e0c28]">
@@ -62,15 +133,73 @@ const SignUp = () => {
           </p>
           <div className="mt-[30px]">
             <div>
-              <MelaniInput tagText="Email" inputType="email" />
+              <MelaniInput
+                tagText="Email"
+                inputType="email"
+                onInputChange={(newVal) => setEmail(newVal)}
+              />
             </div>
             <div className="flex">
-              <MelaniInput tagText="Username" inputType="text" />
+              <MelaniInput
+                tagText="Username"
+                inputType="text"
+                onInputChange={(newVal) => setUsername(newVal)}
+              />
               <div className="mr-[20px]"></div>
-              <MelaniInput tagText="Password" inputType="password" />
+              <MelaniInput
+                tagText="Password"
+                inputType="password"
+                onInputChange={(newVal) => setPassword(newVal)}
+              />
             </div>
             <div className="">
-              <SelectWithSearch />
+              <SelectWithSearch
+                visible={true}
+                data={countries}
+                label="Country of residence"
+                onValueChanged={(currentCountry) =>
+                  setCurrentCountry(currentCountry)
+                }
+              />
+              <SelectWithSearch
+                visible={currentCountry.title === 'United States'}
+                data={states}
+                label="State/Province"
+                onValueChanged={(currentState) => setCurrentState(currentState)}
+              />
+              <div className="mb-[15px] mt-[10px] flex flex-row">
+                <input
+                  className=" pointer no-tab-highlight mr-[10px] w-[16px]"
+                  name="agreement"
+                  id="agreement"
+                  data-testid="checkbox-input-terms-and-service-0"
+                  type="checkbox"
+                  aria-checked="true"
+                />
+                By continuing I agree to the&nbsp;
+                <Link href="/policy/en" className="font-medium text-purple">
+                  Terms of Service
+                </Link>
+                &nbsp;and&nbsp;
+                <Link href="/policy/en" className="font-medium text-purple">
+                  Privacy Policy.
+                </Link>
+              </div>
+              <div className="flex flex-row-reverse">
+                <ARoundedPurple
+                  additionalClassName=" lg:w-auto w-full"
+                  text="Create account"
+                  onclick={() =>
+                    console.log({
+                      email,
+                      username,
+                      password,
+                      currentCountry,
+                      currentState,
+                    })
+                  }
+                />
+              </div>
             </div>
           </div>
         </SignContent>
