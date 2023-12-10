@@ -18,9 +18,7 @@ const ExploreItem = (props: ExploreItemProps) => {
         <span className="mr-[8px]">
           <img
             src={`/assets/images/icons/${props.srcPath}`}
-            className={`kraken-image-svg ${
-              props.mode === 'mobile' ? 'h-[24px] w-[24px]' : ''
-            }`}
+            className={` ${props.mode === 'mobile' ? 'h-[24px] w-[24px]' : ''}`}
             alt={props.title}
             loading="lazy"
           />
@@ -32,7 +30,9 @@ const ExploreItem = (props: ExploreItemProps) => {
           {props.mode === 'mobile' ? (
             ''
           ) : (
-            <span className="text-sm font-light">{props.description}</span>
+            <span className=" text-sm font-light text-gray-600">
+              {props.description}
+            </span>
           )}
         </span>
       </a>

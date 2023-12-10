@@ -4,19 +4,6 @@ import { ARoundedTransparent } from '@/components/Buttons/ARoundedTransparent';
 import { ARoundedWhite } from '@/components/Buttons/ARoundedWhite';
 import { MelaniWrapper } from '@/layout/MelaniWrapper';
 
-// import { Logo } from '../components/Logo';
-// import { CenteredFooter } from '../footer/CenteredFooter';
-// import { Section } from '../layout/Section';
-
-// type IBackgroundProps = {
-//   children: ReactNode;
-//   color: string;
-// };
-
-// const Background = (props: IBackgroundProps) => (
-//   <div className={props.color}>{props.children}</div>
-// );
-
 const Footer = () => (
   <footer className="pb-[160px] font-celias text-[14px] leading-[24px] lg:pt-[88px]">
     <MelaniWrapper>
@@ -34,11 +21,15 @@ const Footer = () => (
           </p>
           <div className="signin-2">
             <ARoundedWhite
-              additionalClassName=" mb-[8px]"
+              additionalClassName=" md:w-full lg:w-full mb-[8px]"
               href="sign-up"
               text="Create account"
             />
-            <ARoundedTransparent href="sign-in" text="Sign in" />
+            <ARoundedTransparent
+              additionalClassName="md:w-full lg:w-full"
+              href="sign-in"
+              text="Sign in"
+            />
           </div>
           <ul className="mt-[60px] flex w-[160px] list-none flex-row justify-start">
             <li>
@@ -478,56 +469,7 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-        <div className="language-switcher-wrap fc-da28c4c3-3">
-          <form>
-            <div className="current-language">
-              <label htmlFor="curlang">Language</label>
-            </div>
-            <div className="switcher-menu">
-              <select id="curlang" data-testid="curlang">
-                <option data-testid="optlang-en-us" value="en-us">
-                  U.S. English
-                </option>
-                <option data-testid="optlang-en-gb" value="en-gb">
-                  British English
-                </option>
-                <option data-testid="optlang-es-es" value="es-es">
-                  Español
-                </option>
-                <option data-testid="optlang-fil-ph" value="fil-ph">
-                  Filipino
-                </option>
-                <option data-testid="optlang-fr" value="fr">
-                  Français
-                </option>
-                <option data-testid="optlang-it-it" value="it-it">
-                  Italiano
-                </option>
-                <option data-testid="optlang-pt-br" value="pt-br">
-                  Português
-                </option>
-                <option data-testid="optlang-ru-ru" value="ru-ru">
-                  Русский
-                </option>
-                <option data-testid="optlang-vi-vn" value="vi-vn">
-                  Tiếng Việt
-                </option>
-                <option data-testid="optlang-tr-tr" value="tr-tr">
-                  Türkçe
-                </option>
-                <option data-testid="optlang-uk-ua" value="uk-ua">
-                  Українська
-                </option>
-                <option data-testid="optlang-zh-cn" value="zh-cn">
-                  中文
-                </option>
-                <option data-testid="optlang-ja-jp" value="ja-jp">
-                  日本語
-                </option>
-              </select>
-            </div>
-          </form>
-        </div>
+        <div className="language-switcher-wrap fc-da28c4c3-3"></div>
       </div>
       <div className="footer-disclaimer">
         <p>

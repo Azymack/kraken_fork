@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
-import { Fragment, useState } from 'react';
+import { Dialog, Disclosure } from '@headlessui/react';
+import Link from 'next/link';
+import { useState } from 'react';
 
 import { ARoundedPurple } from '@/components/Buttons/ARoundedPurple';
 import { ARoundedTransparent } from '@/components/Buttons/ARoundedTransparent';
@@ -137,6 +138,7 @@ const Header = () => {
     <header className="flex justify-between bg-purple px-[40px]">
       <Logo />
       <nav className="flex items-center lg:grow" aria-label="Global">
+        {/* hamburger icon at the right top corner on mobile */}
         <div className="flex lg:hidden">
           <button
             title="hamburger"
@@ -147,112 +149,74 @@ const Header = () => {
             <Hamburger />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-primary-200">
-              Explore
-            </Popover.Button>
 
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 flex w-max overflow-hidden rounded-[10px] bg-white shadow-lg ring-1 ring-gray-900/5">
-                <div className="z-2 clip-path-[polygon(0% 75%, 50% 10%, 100% 75%)] translate-y-26 mt-22 transition-delay-[.1s, 0] duration-250 absolute left-1/2 top-0 h-11 w-11 -translate-x-1/2 bg-white opacity-100 transition"></div>
-                <div className="flex">
-                  <ul className="m-2 grid w-max grid-cols-2 p-2">
-                    {exploreItems.map((item) => (
-                      <ExploreItem
+        {/* menu bar on desktop */}
+        <ul className="hidden grow list-none lg:flex">
+          <li className="menu-item">
+            <Link href="#">Explore</Link>
+            <div className="menu-panel absolute z-50 ml-[-60px] ">
+              <div className="triangle"></div>
+              <div className="rotate-panel mt-[50px] flex bg-white">
+                <ul className="m-2 grid w-max grid-cols-2 p-2">
+                  {exploreItems.map((item) => (
+                    <ExploreItem
+                      key={item.title}
+                      srcPath={`${item.iconName}${item.iconType}`}
+                      title={item.title}
+                      description={item.description}
+                    />
+                  ))}
+                </ul>
+                <div className="w-[269px] rounded-r-[8px] bg-white px-0 py-[25px]">
+                  <div></div>
+                  <ul className="mx-[15px]">
+                    <div className="mb-[15px] text-purple">
+                      <strong>
+                        <a href="/institutions">Institutions</a>
+                      </strong>
+                    </div>
+                    {institutionItems.map((item) => (
+                      <InstitutionItem
                         key={item.title}
+                        href={item.href}
                         srcPath={`${item.iconName}${item.iconType}`}
                         title={item.title}
-                        description={item.description}
                       />
                     ))}
                   </ul>
-                  <div className="w-[269px] rounded-r-[8px] bg-white px-0 py-[25px]">
-                    <div></div>
-                    <ul className="mx-[15px]">
-                      <div className="mb-[15px]">
-                        <strong>
-                          <a href="/institutions">Institutions</a>
-                        </strong>
-                      </div>
-                      {institutionItems.map((item) => (
-                        <InstitutionItem
-                          key={item.title}
-                          href={item.href}
-                          srcPath={`${item.iconName}${item.iconType}`}
-                          title={item.title}
-                        />
-                      ))}
-                    </ul>
-                  </div>
                 </div>
-              </Popover.Panel>
-            </Transition>
-          </Popover>
-
-          <a
-            href="#"
-            className="text-sm font-semibold leading-6 text-primary-200"
-          >
-            Prices
-          </a>
-
-          <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-primary-200">
-              Why Kraken
-            </Popover.Button>
-
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 flex w-max overflow-hidden rounded-[10px] bg-white shadow-lg ring-1 ring-gray-900/5">
-                <div className="z-2 clip-path-[polygon(0% 75%, 50% 10%, 100% 75%)] translate-y-26 mt-22 transition-delay-[.1s, 0] duration-250 absolute left-1/2 top-0 h-11 w-11 -translate-x-1/2 bg-white opacity-100 transition"></div>
-                <div className="flex">
-                  <div className="rounded-r-[8px] bg-white px-0">
-                    <div></div>
-                    <ul className="m-2 grid w-max grid-cols-2 p-2">
-                      {whyKrakenItems.map((item) => (
-                        <WhyKrakenItem
-                          key={item.title}
-                          href={item.href}
-                          srcPath={`${item.iconName}${item.iconType}`}
-                          title={item.title}
-                          description={item.description}
-                        />
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </Popover.Panel>
-            </Transition>
-          </Popover>
-          <a
-            href="#"
-            className="text-sm font-semibold leading-6 text-primary-200"
-          >
-            Learn
-          </a>
-          <a
-            href="#"
-            className="text-sm font-semibold leading-6 text-primary-200"
-          >
-            Support
-          </a>
-        </Popover.Group>
+              </div>
+            </div>
+          </li>
+          <li className="menu-item">
+            <Link href="#">Prices</Link>
+          </li>
+          <li className="menu-item">
+            <Link href="#">Why Kraken?</Link>
+            <div className="menu-panel absolute z-50 ml-[-60px] ">
+              <div className="triangle left-[16.7%]"></div>
+              <div className="rotate-panel mt-[50px] flex bg-white">
+                <ul className="m-2 grid w-max grid-cols-2 p-2">
+                  {whyKrakenItems.map((item) => (
+                    <WhyKrakenItem
+                      key={item.title}
+                      href={item.href}
+                      srcPath={`${item.iconName}${item.iconType}`}
+                      title={item.title}
+                      description={item.description}
+                    />
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li className="menu-item">
+            <Link href="#">Learn</Link>
+          </li>
+          <li className="menu-item">
+            <Link href="#">Support</Link>
+          </li>
+        </ul>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <ARoundedTransparent
             additionalClassName="mr-[10px]"
@@ -262,6 +226,7 @@ const Header = () => {
           <ARoundedWhite text="Sign up" href="/sign-up" />
         </div>
       </nav>
+      {/* Mobile menu */}
       <Dialog
         as="div"
         className="lg:hidden"
@@ -318,7 +283,7 @@ const Header = () => {
                       <a href="/institutions">Institutions</a>
                     </strong>
                   </div>
-                  <ul className=" grid w-max grid-cols-2 ">
+                  <ul className=" grid w-max max-w-fit grid-cols-2">
                     {institutionItems.map((item) => (
                       <InstitutionItem
                         key={item.title}

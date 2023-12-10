@@ -47,7 +47,9 @@ const BuyCryptoInMinutes = () => {
                   srcPath="/assets/images/icons/circled-number-1-233x232.png"
                 />
                 <div className="text-left font-celias text-[24px] font-medium leading-[30px] text-black">
-                  <p>Create your free Kraken account</p>
+                  <p className="text-center sm:text-left">
+                    Create your free Kraken account
+                  </p>
                 </div>
               </div>
               <div className=" flex flex-col content-start items-center lg:flex-row">
@@ -56,7 +58,9 @@ const BuyCryptoInMinutes = () => {
                   srcPath="/assets/images/icons/circled-number-2-233x232.png"
                 />
                 <div className="text-left font-celias text-[24px] font-medium leading-[30px] text-black">
-                  <p>Connect your funding method</p>
+                  <p className="text-center sm:text-left">
+                    Connect your funding method
+                  </p>
                 </div>
               </div>
               <div className=" flex flex-col content-start items-center lg:flex-row">
@@ -65,7 +69,9 @@ const BuyCryptoInMinutes = () => {
                   srcPath="/assets/images/icons/circled-number-3-233x232.png"
                 />
                 <div className="text-left font-celias text-[24px] font-medium leading-[30px] text-black">
-                  <p>Buy and sell 200+ cryptocurrencies</p>
+                  <p className="text-center sm:text-left">
+                    Buy and sell 200+ cryptocurrencies
+                  </p>
                 </div>
               </div>
               <VerticalSpacerInPixel pixel="h-[40px]" />

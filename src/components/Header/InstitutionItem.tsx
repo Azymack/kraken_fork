@@ -15,7 +15,6 @@ const InstitutionItem = (props: InstitutionItemProps) => {
         <span className="pr-[10px]">
           <img
             src={`/assets/images/icons/${props.srcPath}`}
-            // className="kraken-image-svg"
             alt={props.title}
             loading="lazy"
           />
