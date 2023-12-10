@@ -542,7 +542,7 @@
       bottom: 0;
       left: -73px;
       width: 74px;
-      background: url("\/assets\/images\/sign-up-left-slice.svg") no-repeat 100%
+      background: url("/assets/images/sign-up-left-slice.svg") no-repeat 100%
         0;
       background-size: contain;
     }
@@ -553,7 +553,7 @@
       bottom: 0;
       right: -339px;
       width: 340px;
-      background: url("\/assets\/images\/sign-up-right-slice.svg") no-repeat;
+      background: url("/assets/images/sign-up-right-slice.svg") no-repeat;
       background-size: cover;
     }
   }

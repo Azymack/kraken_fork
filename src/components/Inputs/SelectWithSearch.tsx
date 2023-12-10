@@ -14,9 +14,7 @@ const SelectWithSearch = (props: {
 }) => {
   const [filteredData, setFilteredData] = useState<DataList>([]);
   const [dropdownVisible, setDropdownVisible] = useState<boolean>(false);
-  const [selected, setSelected] = useState<Object>(
-    props.data && props.data.length > 0 ? props.data[0] : { id: '', title: '' },
-  );
+  const [selected, setSelected] = useState<Data>({ id: '', title: '' });
   const [filter, setFilter] = useState<string>('');
   const dataRef = useRef<HTMLInputElement>(null);
 

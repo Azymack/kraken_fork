@@ -21,8 +21,8 @@ type Data = {
 const SignUp = () => {
   const toggleArray: [any, any] = ['personal', 'business'];
   const [category, toggleCategory] = useToggle(toggleArray);
-  const [currentCountry, setCurrentCountry] = useState('');
-  const [currentState, setCurrentState] = useState('');
+  const [currentCountry, setCurrentCountry] = useState({ id: '', title: '' });
+  const [currentState, setCurrentState] = useState({ id: '', title: '' });
 
   const [countries, setCountries] = useState<Data[]>([]);
   const [states, setStates] = useState<Data[]>([]);
@@ -68,6 +68,7 @@ const SignUp = () => {
     ]);
 
     setCountryLoading(false);
+    console.log(countryLoading);
   }, []);
 
   useEffect(() => {
@@ -92,7 +93,8 @@ const SignUp = () => {
       },
     ]);
 
-    setCountryLoading(false);
+    setStateLoading(false);
+    console.log(stateLoading);
   }, []);
 
   return (
@@ -136,20 +138,20 @@ const SignUp = () => {
               <MelaniInput
                 tagText="Email"
                 inputType="email"
-                onInputChange={(newVal) => setEmail(newVal)}
+                onInputChange={(newVal: string) => setEmail(newVal)}
               />
             </div>
             <div className="flex">
               <MelaniInput
                 tagText="Username"
                 inputType="text"
-                onInputChange={(newVal) => setUsername(newVal)}
+                onInputChange={(newVal: string) => setUsername(newVal)}
               />
               <div className="mr-[20px]"></div>
               <MelaniInput
                 tagText="Password"
                 inputType="password"
-                onInputChange={(newVal) => setPassword(newVal)}
+                onInputChange={(newVal: string) => setPassword(newVal)}
               />
             </div>
             <div className="">
@@ -157,15 +159,15 @@ const SignUp = () => {
                 visible={true}
                 data={countries}
                 label="Country of residence"
-                onValueChanged={(currentCountry) =>
-                  setCurrentCountry(currentCountry)
+                onValueChanged={(curCountry: Data) =>
+                  setCurrentCountry(curCountry)
                 }
               />
               <SelectWithSearch
                 visible={currentCountry.title === 'United States'}
                 data={states}
                 label="State/Province"
-                onValueChanged={(currentState) => setCurrentState(currentState)}
+                onValueChanged={(curState: Data) => setCurrentState(curState)}
               />
               <div className="mb-[15px] mt-[10px] flex flex-row">
                 <input
