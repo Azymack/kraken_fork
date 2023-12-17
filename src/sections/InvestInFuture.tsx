@@ -16,7 +16,7 @@ const InvestInFuture = () => {
               <div className="w-full"></div>
               <div className=" opacity-100">
                 <div className=" transform-none opacity-100">
-                  <h1 className="text-center font-celias text-[58px] font-bold leading-[66px] text-black lg:text-start">
+                  <h1 className="text-center text-[58px] font-medium leading-[66px] text-black lg:text-start">
                     Invest in your future
                   </h1>
                 </div>
@@ -24,7 +24,7 @@ const InvestInFuture = () => {
               <div className="h-[32px] w-full"></div>
               <div className=" opacity-100">
                 <div className=" transform-none opacity-100">
-                  <h1 className="text-center font-celias text-[26px] font-bold leading-[36px] text-black lg:text-start">
+                  <h1 className="text-center text-[26px] leading-[36px] text-black lg:text-start">
                     Grow your portfolio in a more fair and open financial
                     system. <strong>Start trading crypto with just $10.</strong>
                   </h1>
