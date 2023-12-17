@@ -178,6 +178,7 @@ const SignUp = () => {
                   type="checkbox"
                   aria-checked="true"
                 />
+                <p>
                 By continuing I agree to the&nbsp;
                 <Link href="/policy/en" className="font-medium text-purple">
                   Terms of Service
@@ -186,6 +187,8 @@ const SignUp = () => {
                 <Link href="/policy/en" className="font-medium text-purple">
                   Privacy Policy.
                 </Link>
+
+                </p>
               </div>
               <div className="flex flex-row-reverse">
                 <ARoundedPurple
