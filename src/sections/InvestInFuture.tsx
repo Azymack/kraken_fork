@@ -10,7 +10,7 @@ const InvestInFuture = () => {
   return (
     <MelaniComponent>
       <div className="relative py-[30px] lg:py-[50px]">
-        <div className="fc-12e3415e-2 box-border flex flex-col px-[30px] lg:flex-row lg:px-[100px] min-[1234px]:px-[calc((100%-980px)/2)]">
+        <div className="box-border flex flex-col px-[30px] lg:flex-row lg:px-[100px] min-[1234px]:px-[calc((100%-980px)/2)]">
           <MelaniWrapper addtionalClassName="flex flex-col lg:flex-row lg:px-[100px]">
             <div className=" flex flex-auto flex-col justify-center lg:pr-[160px]">
               <div className="w-full"></div>
