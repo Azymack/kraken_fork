@@ -357,3 +357,51 @@
   font-weight: 100;
   src: url(/assets/fonts/CeliasW05-Thin.8a81ff31.woff2) format("woff2"),url(/assets/fonts/CeliasW05-Thin.672ba764.woff) format("woff")
 }
+
+@font-face {
+  font-family: GT Condensed Bold;
+  font-display: block;
+  src: url(/assets/fonts/GT-Standard-VF-Beta-V3.ttf) format("truetype");
+  font-weight: 1000;
+  font-style: normal
+}
+
+@font-face {
+  font-family: GT Standard S;
+  font-display: block;
+  src: url(/assets/fonts/GT-Standard-Beta-v3-Regular-S.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: GT Standard S;
+  font-display: block;
+  src: url(/assets/fonts/GT-Standard-Beta-v3-Black-S.otf) format("opentype");
+  font-weight: 900;
+  font-style: normal
+}
+
+@font-face {
+  font-family: GT Standard S;
+  font-display: block;
+  src: url(/assets/fonts/GT-Standard-Beta-v3-Bold-S.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: GT Standard S;
+  font-display: block;
+  src: url(/assets/fonts/GT-Standard-Beta-v3-Light-S.otf) format("opentype");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: GT Standard S;
+  font-display: block;
+  src: url(/assets/fonts/GT-Standard-Beta-v3-Medium-S.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal
+}

@@ -702,4 +702,17 @@
     background-color: grey;
   }
 
+  .world-go-bg {
+    padding: 40px;
+    position: relative;
+    background: rgb(246, 247, 255);
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 20px;
+  }
+
+  .wth-61 {
+    font-variation-settings: "wdth" 61;
+  }
 }
