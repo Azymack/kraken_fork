@@ -355,14 +355,14 @@
 @font-face {
   font-family: Celias;
   font-weight: 100;
-  src: url(/assets/fonts/CeliasW05-Thin.8a81ff31.woff2) format("woff2"),url(/assets/fonts/CeliasW05-Thin.672ba764.woff) format("woff")
-}
+  src: url(/assets/fonts/CeliasW05-Thin.woff2) format("woff2"),url(/assets/fonts/CeliasW05-Thin.woff) format("woff")
+}8
 
 @font-face {
   font-family: GT Condensed Bold;
   font-display: block;
   src: url(/assets/fonts/GT-Standard-VF-Beta-V3.ttf) format("truetype");
-  font-weight: 1000;
+  font-weight: 900;
   font-style: normal
 }
 

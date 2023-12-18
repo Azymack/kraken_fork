@@ -252,7 +252,7 @@ const CryptoPortfolio = () => {
       <div className=" bg-transparent">
         <div className="z-5 pointer-events-none h-full w-full overflow-hidden border-r-0">
           <VerticalSpacerInPixel pixel="h-[84px]" />
-          <TextBigPurple text="Build your own portfolio" />
+          <TextBigPurple text="Build your crypto portfolio" />
           <VerticalSpacerInPixel pixel="h-[40px]" />
           <div className="portfolio-div lg:portfolio-blur">
             {cryptoList.map((coins: TypeCoins) => (

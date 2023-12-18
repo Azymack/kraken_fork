@@ -20,10 +20,10 @@ const WhyKraken = () => {
               <div className="mx-0 box-border w-full max-w-[260px]">
                 <MelaniImage srcPath="/assets/images/simplicity-800x801.png" />
                 <VerticalSpacerInPixel pixel="h-[8px]" />
-                <h3 className="text-center font-celias text-[24px] font-medium leading-[32px] text-black">
+                <h3 className="text-center  text-[24px] font-medium leading-[32px] text-black">
                   Simplicity
                 </h3>
-                <div className="text-center font-celias text-[16px] font-normal leading-[24px] text-black">
+                <div className="text-center  text-[16px] font-normal leading-[24px] text-black">
                   <p>
                     Kraken makes it easy to buy&nbsp;
                     <br />
@@ -42,10 +42,10 @@ const WhyKraken = () => {
               <div className="mx-0 box-border w-full max-w-[260px]">
                 <MelaniImage srcPath="/assets/images/education-800x801.png" />
                 <VerticalSpacerInPixel pixel="h-[8px]" />
-                <h3 className="text-center font-celias text-[24px] font-medium leading-[32px] text-black">
+                <h3 className="text-center  text-[24px] font-medium leading-[32px] text-black">
                   Education
                 </h3>
-                <div className="text-center font-celias text-[16px] font-normal leading-[24px] text-black">
+                <div className="text-center  text-[16px] font-normal leading-[24px] text-black">
                   <p>
                     Not sure where to start? Head to our{' '}
                     <Link
@@ -62,10 +62,10 @@ const WhyKraken = () => {
               <div className="mx-0 box-border w-full max-w-[260px]">
                 <MelaniImage srcPath="/assets/images/service-800x802.png" />
                 <VerticalSpacerInPixel pixel="h-[8px]" />
-                <h3 className="text-center font-celias text-[24px] font-medium leading-[32px] text-black">
+                <h3 className="text-center  text-[24px] font-medium leading-[32px] text-black">
                   Service
                 </h3>
-                <div className="text-center font-celias text-[16px] font-normal leading-[24px] text-black">
+                <div className="text-center  text-[16px] font-normal leading-[24px] text-black">
                   <p>
                     Find your answers instantly in our{' '}
                     <Link

@@ -29,7 +29,7 @@ const PasswordInput = (props: { onInputChange: Function }) => {
         className="no-tab-highlight absolute bottom-0 right-0 flex"
         onClick={() => setVisible(!visible)}
       >
-        <div className="text-purple">
+        <div className="text-black">
           {visible ? (
             <svg
               width="24"

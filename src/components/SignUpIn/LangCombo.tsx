@@ -1,9 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { Listbox, Transition } from '@headlessui/react';
-import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid';
+import { CheckIcon } from '@heroicons/react/20/solid';
 import { Fragment, useState } from 'react';
 
-const LangCombo = () => {
+const LangCombo = (props: { selectedColor: string }) => {
   const langs = [
     { name: 'U.S.English' },
     { name: 'British English' },
@@ -25,13 +25,25 @@ const LangCombo = () => {
     <div>
       <Listbox value={selected} onChange={setSelected}>
         <div className="">
-          <Listbox.Button className="relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
+          <Listbox.Button
+            className={`relative w-full cursor-pointer rounded-lg bg-transparent py-2 pl-3 pr-10 text-left ${props.selectedColor}  focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm`}
+          >
             <span className="block truncate">{selected && selected.name}</span>
             <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-              <ChevronUpDownIcon
-                className="h-5 w-5 text-gray-400"
+              <svg
+                width="24"
+                height="24"
+                className=" fill-current"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 16L7 10L17 10L12 16Z"></path>
+              </svg>
+              {/* <ChevronUpDownIcon
+                className="h-5 w-5 text-purple"
                 aria-hidden="true"
-              />
+              /> */}
             </span>
           </Listbox.Button>
           <Transition

@@ -24,7 +24,7 @@ const ForEveryone = () => {
           <div className="h-[84px] w-full"></div>
         </MelaniComponent>
         <MelaniComponent>
-          <h2 className=" text-center font-celias text-[40px] font-medium leading-[64px] text-purple">
+          <h2 className=" text-center text-[34px] font-medium leading-[42px] text-purple lg:text-[40px] lg:leading-[64px]">
             <span>Kraken is a crypto exchange for everyone</span>
           </h2>
         </MelaniComponent>
@@ -38,10 +38,10 @@ const ForEveryone = () => {
                 key={item.category}
                 className=" flex flex-col items-stretch justify-start"
               >
-                <h3 className="text-center font-celias text-[48px] font-medium leading-[64px] text-purple">
+                <h3 className="text-center  text-[48px] font-medium leading-[64px] text-purple">
                   {item.value}
                 </h3>
-                <div className="text-center font-celias text-base font-normal leading-[26px] text-black">
+                <div className="text-center  text-base font-normal leading-[26px] text-black">
                   {item.category}
                 </div>
               </div>

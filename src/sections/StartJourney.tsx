@@ -13,7 +13,7 @@ const StartJourney = () => {
             <VerticalSpacerInPixel pixel="h-[64px]" />
             <TextBigPurple text="Start your crypto journey" />
             <VerticalSpacerInPixel pixel="h-[24px]" />
-            <div className="text-center font-celias text-[32px] font-normal leading-[42px] text-black">
+            <div className="text-center text-[16px] font-normal leading-[19px] text-black lg:text-[32px] lg:leading-[42px]">
               <p>
                 Kraken makes it easy to get started. Sign up today to{' '}
                 <strong>buy and sell 200+ cryptocurrencies</strong>.
@@ -32,7 +32,7 @@ const StartJourney = () => {
               <img
                 src="/assets/images/crypto-journey-1040x880.png"
                 alt=""
-                className=""
+                className=" w-[40%]"
               />
             </div>
           </MelaniComponent>
@@ -48,7 +48,7 @@ const StartJourney = () => {
                   text="Start your crypto journey"
                 />
                 <VerticalSpacerInPixel pixel="h-[30px]" />
-                <div className="font-celias text-[32px] font-normal leading-[42px] text-black">
+                <div className=" text-[32px] font-normal leading-[42px] text-black">
                   <p>
                     Kraken makes it easy to get started. Sign up
                     <br />
@@ -66,14 +66,14 @@ const StartJourney = () => {
               <img
                 src="/assets/images/crypto-journey-1040x880.png"
                 alt=""
-                className=" max-w-[520px]"
+                className=" max-w-[480px]"
               />
             </div>
           </MelaniComponent>
         </div>
         <div>
           <VerticalSpacerInPixel pixel="h-[24px]" />
-          <div className="text-center font-celias text-[12px] font-normal leading-[17px] text-bshu">
+          <div className="text-center  text-[12px] font-normal leading-[17px] text-bshu">
             <p>
               <em>
                 <a
@@ -102,7 +102,7 @@ const StartJourney = () => {
             </p>
           </div>
           <VerticalSpacerInPixel pixel="h-[20px]" />
-          <div className="text-center font-celias text-[12px] font-normal leading-[17px] text-bshu">
+          <div className="text-center  text-[12px] font-normal leading-[17px] text-bshu">
             <p>
               <em>
                 Reward rates are subject to change and compliance with
@@ -125,7 +125,7 @@ const StartJourney = () => {
             </p>
           </div>
           <VerticalSpacerInPixel pixel="h-[20px]" />
-          <div className="text-center font-celias text-[12px] font-normal leading-[17px] text-bshu">
+          <div className="text-center  text-[12px] font-normal leading-[17px] text-bshu">
             <p>
               <em>
                 Trading futures, derivatives and other instruments using

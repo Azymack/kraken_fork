@@ -1,6 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { useEffect, useRef, useState } from 'react';
 
+import { useClickOutside } from '@/hooks/use-click-outside';
+
 import { CountryOrState } from './CountryOrState';
 
 type Data = { id: string; title: string };
@@ -11,12 +13,31 @@ const SelectWithSearch = (props: {
   data: DataList;
   label: string;
   visible: boolean;
+  onDropdownVisibleChange?: Function;
 }) => {
+  const modalRef = useRef(null);
+
   const [filteredData, setFilteredData] = useState<DataList>([]);
   const [dropdownVisible, setDropdownVisible] = useState<boolean>(false);
   const [selected, setSelected] = useState<Data>({ id: '', title: '' });
   const [filter, setFilter] = useState<string>('');
   const dataRef = useRef<HTMLInputElement>(null);
+
+  useClickOutside({
+    ref: modalRef,
+    onClickOutside: () => {
+      setDropdownVisible(false);
+    },
+  });
+
+  useEffect(() => {
+    if (props.onDropdownVisibleChange)
+      props.onDropdownVisibleChange(dropdownVisible);
+  }, [dropdownVisible]);
+
+  useEffect(() => {
+    if (!props.visible) setDropdownVisible(false);
+  }, [props.visible]);
 
   useEffect(() => {
     setFilter('');
@@ -42,7 +63,7 @@ const SelectWithSearch = (props: {
   }, [dropdownVisible]);
 
   return (
-    <div className={`${props.visible ? '' : 'hidden'}`}>
+    <div ref={modalRef} className={`${props.visible ? '' : 'hidden'}`}>
       <div className="group relative z-0 mb-5 w-full">
         <input type="hidden" name={`hi_${props.label}`} value="DZ" />
         <input
