@@ -10,7 +10,7 @@ const Footer = () => (
       <MelaniWrapper>
         <div className="footer-menus">
           <div className="footer-sign-in w-[240px]">
-            <div className="footer-bottom pb-[15px] pt-[6px]">
+            <div className="footer-bottom border-0 pb-[15px] pt-[6px]">
               <div className="logo-wrapper">
                 <Link className="footer-logo" href="/">
                   Kraken

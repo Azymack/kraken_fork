@@ -37,6 +37,26 @@
     );
   }
 
+  .rounded-info {
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ded9f7;
+    color: #5d45dc;
+  }
+
+  @keyframes floating {
+    0% {
+      opacity: 1;
+      transform: translateX(var(--distance-to-the-start));
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(var(--distance-to-the-end));
+    }
+  }
+
   .floating-row {
     --animation-duration: 100s;
     width: max-content;
@@ -47,12 +67,16 @@
     padding-left: 28px;
   }
 
+  .paused > * > * {
+    animation-play-state: paused;
+  }
+
   .floating-element {
     --distance-to-the-start: -159.234375px;
     --distance-to-the-end: 1418.4609375px;
     --element-position: -27.984375px;
     animation-delay: -98.2262s;
-    animation-name: floating-anim;
+    animation-name: floating;
     animation-duration: var(--animation-duration);
     animation-fill-mode: both;
     animation-iteration-count: infinite;
@@ -394,6 +418,7 @@
     align-items: center;
     position: relative;
     padding-top: 21px;
+    border-top: solid 1px #6554d6;
     padding-bottom: 5px;
   }
 
@@ -624,21 +649,27 @@
     }
   }
 
+  .disabled-a {
+    cursor: auto;
+    background-color: #ded9f7!important;
+  }
+
   .sign-content-h1 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
   .sign-content-h1 {
-    font-family:
+    /* font-family:
       Celias Thin,
       Helvetica,
       Arial,
-      sans-serif;
+      sans-serif; */
     letter-spacing: normal !important;
     word-wrap: break-word;
     font-size: 2.625rem !important;
     line-height: 1.27 !important;
-    font-weight: 300 !important;
+    /* font-weight: 300 !important; */
     color: #242424;
   }
   .sign-content-h1:lang(ru-ru),
@@ -753,7 +784,7 @@
     padding-right: 12px;
   }
 
-  .language-switcher-wrap select option{
+  .language-switcher-wrap select option {
     color: #000;
   }
 
@@ -773,6 +804,8 @@
   }
 
   .footer-disclaimer p {
-    font-family: 'Celias'
+    font-family: "Celias";
   }
+
+
 }

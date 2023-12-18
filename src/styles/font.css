@@ -355,8 +355,8 @@
 @font-face {
   font-family: Celias;
   font-weight: 100;
-  src: url(/assets/fonts/CeliasW05-Thin.8a81ff31.woff2) format("woff2"),url(/assets/fonts/CeliasW05-Thin.672ba764.woff) format("woff")
-}
+  src: url(/assets/fonts/CeliasW05-Thin.woff2) format("woff2"),url(/assets/fonts/CeliasW05-Thin.woff) format("woff")
+}8
 
 @font-face {
   font-family: GT Condensed Bold;

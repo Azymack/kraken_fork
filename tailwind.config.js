@@ -22,6 +22,7 @@ module.exports = {
         'celias-bold': ['Celia-Bold', 'sans-serif'],
         'celias-light': ['Celia-Light', 'sans-serif'],
         'celias-black': ['Celia-Black', 'sans-serif'],
+        'celias-thin': ['Celia-Thin', 'sans-serif'],
         plexsans: ['IBM Plex Sans', 'sans-serif'],
         gts: ['GT Standard S'],
         gcb: ['GT Condensed Bold'],

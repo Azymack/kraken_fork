@@ -10,6 +10,7 @@ import { LangCombo } from '@/components/SignUpIn/LangCombo';
 import { PasswordInput } from '@/components/SignUpIn/PasswordInput';
 import { SignContent } from '@/components/SignUpIn/SignContent';
 import { SignHeader } from '@/components/SignUpIn/SignHeader';
+import { InfoImg } from '@/components/SVG/InfoImg';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -29,8 +30,8 @@ const SignIn = () => {
           </div>
         </SignHeader>
         <SignContent>
-          <h1 className="sign-content-h1 mb-8">Sign in to Kraken</h1>
-          <div className="mb-10 flex flex-row items-center gap-1 bg-[#f7f6fd] p-4">
+          <h1 className=" sign-content-h1 mb-8 font-thin">Sign in to Kraken</h1>
+          <div className=" mb-4 flex flex-row items-center gap-1 bg-[#f7f6fd] p-4">
             <svg
               width="24"
               height="24"
@@ -43,14 +44,14 @@ const SignIn = () => {
               <path d="M12 22C10.34 22 9 20.66 9 19H15C15 20.66 13.66 22 12 22Z"></path>
             </svg>
             <div>
-              <h2 className=" font-sans ">
+              <h2 className=" font-plexsans font-semibold ">
                 <span>You can now sign in with your email address!</span>
               </h2>
             </div>
           </div>
           <div>
             <MelaniInput
-              tagText="Email"
+              tagText="Email or username"
               inputType="email"
               onInputChange={(newValue: string) => setEmail(newValue)}
             />
@@ -65,27 +66,21 @@ const SignIn = () => {
                   data-lang-key="general:Help"
                   className="caption-2 flex items-center"
                 >
-                  <span className="mr-[4px]">Help</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    version="1.1"
-                    id="Capa_1"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 32 32"
-                  >
-                    <g>
-                      <path d="M17.962,24.725l1.806,0.096v2.531h-7.534v-2.406l1.045-0.094c0.568-0.063,0.916-0.254,0.916-1.014v-8.801   c0-0.699-0.188-0.92-0.791-0.92l-1.106-0.062v-2.626h5.666L17.962,24.725L17.962,24.725z M15.747,4.648   c1.394,0,2.405,1.047,2.405,2.374c0,1.331-1.014,2.313-2.438,2.313c-1.454,0-2.404-0.982-2.404-2.313   C13.31,5.695,14.26,4.648,15.747,4.648z M16,32C7.178,32,0,24.822,0,16S7.178,0,16,0c8.82,0,16,7.178,16,16S24.82,32,16,32z M16,3   C8.832,3,3,8.832,3,16s5.832,13,13,13s13-5.832,13-13S23.168,3,16,3z" />
-                    </g>
-                  </svg>
+                  <span className=" mr-[4px] font-plexsans font-semibold">
+                    Help
+                  </span>
+                  <div className="rounded-info">
+                    <InfoImg />
+                  </div>
                 </span>
               </div>
             </Link>
             <ARoundedPurple
               text="Sign in"
-              onclick={() => console.log({ email, password })}
-              additionalClassName=""
+              // onclick={}
+              additionalClassName={`${
+                email === '' || password === '' ? 'disabled-a' : ''
+              } py-[8px] min-w-[180px] "`}
               href="#"
             />
           </div>
