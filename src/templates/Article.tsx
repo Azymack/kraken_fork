@@ -1,5 +1,6 @@
 import { BlackCards } from '@/sections/BlackCards';
 import { BuyCryptoInMinutes } from '@/sections/BuyCryptoInMinutes';
+import { CryptoMakesGo } from '@/sections/CryptoMakesGo';
 import { CryptoPortfolio } from '@/sections/CryptoPortfolio';
 import { ForEveryone } from '@/sections/ForEveryone';
 import { InvestInFuture } from '@/sections/InvestInFuture';
@@ -15,6 +16,7 @@ const Article = () => {
       <div>
         <div className="mt-[-100px] h-[100px] bg-purple"></div>
         <InvestInFuture />
+        <CryptoMakesGo />
         <ForEveryone />
         <BuyCryptoInMinutes />
         <CryptoPortfolio />

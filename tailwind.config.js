@@ -23,6 +23,8 @@ module.exports = {
         'celias-light': ['Celia-Light', 'sans-serif'],
         'celias-black': ['Celia-Black', 'sans-serif'],
         plexsans: ['IBM Plex Sans', 'sans-serif'],
+        gts: ['GT Standard S'],
+        gcb: ['GT Condensed Bold'],
       },
       colors: {
         purple: '#5741d9',
