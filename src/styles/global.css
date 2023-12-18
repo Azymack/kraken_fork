@@ -611,6 +611,7 @@
     display: flex;
     gap: 0.25rem;
   }
+
   @media screen and (max-width: 480px) {
     .sign-upin-header {
       margin-bottom: 1rem;
@@ -650,13 +651,24 @@
   }
 
   .enabled-a {
-    transition: background .25s ease-in-out,border .25s ease-in-out,color .25s ease-in-out;
+    transition:
+      background 0.25s ease-in-out,
+      border 0.25s ease-in-out,
+      color 0.25s ease-in-out;
   }
 
   .disabled-a {
     cursor: auto;
-    background-color: #ded9f7!important;
-    transition: background .25s ease-in-out,border .25s ease-in-out,color .25s ease-in-out;
+    background-color: #ded9f7 !important;
+    transition:
+      background 0.25s ease-in-out,
+      border 0.25s ease-in-out,
+      color 0.25s ease-in-out;
+  }
+
+  .dropdown {
+    border: 1px grey solid;
+    border-radius: 4px;
   }
 
   .sign-content-h1 {
@@ -665,9 +677,9 @@
   }
 
   .sign-in-button:hover {
-    color: #eeecfb!important;
+    color: #eeecfb !important;
     border-color: #eeecfb;
-    background-color: #2824b6!important;
+    background-color: #2824b6 !important;
   }
 
   .sign-content-h1 {
@@ -719,17 +731,18 @@
   }
 
   .sign-upin-h {
-    font-family:
+    /* font-family:
       Celias Thin,
       Helvetica,
       Arial,
-      sans-serif;
+      sans-serif; */
     letter-spacing: normal !important;
     word-wrap: break-word;
-    font-size: 2.625rem !important;
+    font-size: 2.5rem !important;
     line-height: 1.27 !important;
     font-weight: 300 !important;
     color: #242424;
+    margin-bottom: 1rem;
   }
 
   .linear-flow-animation {
@@ -746,7 +759,18 @@
   }
 
   .selection-at-sign-up:hover {
-    background-color: grey;
+    background-color: #f1f0f7;
+  }
+
+  .sign-in-button-at-sign-up {
+    border: 2px solid #5841d8!important;
+    font-size: 14px!important;
+  }
+
+  .sign-in-button-at-sign-up:hover {
+    color: #eeecfb!important;
+    border-color: #eeecfb!important;
+    background-color: #2824b6!important;
   }
 
   .world-go-bg {
@@ -817,6 +841,4 @@
   .footer-disclaimer p {
     font-family: "Celias";
   }
-
-
 }

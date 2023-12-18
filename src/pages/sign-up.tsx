@@ -33,6 +33,11 @@ const SignUp = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
+  const [countriesVisible, setCountriesVisible] = useState(false);
+  const [statesVisible, setStatesVisible] = useState(false);
+
+  const [agreedOnPolicy, setAgreedOnPolicy] = useState(false);
+
   useEffect(() => {
     // you can just get the full list of countries from backend due to CORS issue
 
@@ -68,7 +73,6 @@ const SignUp = () => {
     ]);
 
     setCountryLoading(false);
-    console.log(countryLoading);
   }, []);
 
   useEffect(() => {
@@ -94,7 +98,6 @@ const SignUp = () => {
     ]);
 
     setStateLoading(false);
-    console.log(stateLoading);
   }, []);
 
   return (
@@ -103,10 +106,10 @@ const SignUp = () => {
         <SignHeader>
           <BareLogo />
           <div className="ml-auto flex items-center gap-1">
-            <LangCombo />
+            <LangCombo selectedColor=" text-white " />
             <ARoundedTransparent
-              additionalClassName="py-[6px] px-[22px] ml-2 common-sign-upin-button"
-              text="Sign in"
+              additionalClassName=" sign-in-button-at-sign-up py-[6px] px-[22px] ml-2 common-sign-upin-button"
+              text="Sign In"
               href="/sign-in"
             />
           </div>
@@ -118,10 +121,14 @@ const SignUp = () => {
               toggleCategory();
             }}
           />
-          <h2 className="sign-upin-h">
+          <h2 className="sign-upin-h ">
             Create your <strong>{category}</strong> account
           </h2>
-          <p className={`mt-[30px] ${category === 'personal' ? 'hidden' : ''}`}>
+          <p
+            className={` font-plexsans text-[#656565] ${
+              category === 'personal' ? 'hidden' : ''
+            } `}
+          >
             Open a business account if you would like to trade for business
             purposes or on behalf of a business entity.{' '}
             <a
@@ -162,37 +169,62 @@ const SignUp = () => {
                 onValueChanged={(curCountry: Data) =>
                   setCurrentCountry(curCountry)
                 }
+                onDropdownVisibleChange={(dropdownVisible: boolean) => {
+                  setCountriesVisible(dropdownVisible);
+                }}
               />
               <SelectWithSearch
-                visible={currentCountry.title === 'United States'}
+                visible={
+                  currentCountry.title === 'United States' && !countriesVisible
+                }
                 data={states}
                 label="State/Province"
                 onValueChanged={(curState: Data) => setCurrentState(curState)}
+                onDropdownVisibleChange={(dropdownVisible: boolean) => {
+                  setStatesVisible(dropdownVisible);
+                }}
               />
-              <div className="mb-[15px] mt-[10px] flex flex-row">
+              <div
+                className={`mb-[15px] mt-[10px] flex flex-row ${
+                  !countriesVisible && !statesVisible ? 'block' : 'hidden'
+                }`}
+              >
                 <input
                   className=" pointer no-tab-highlight mr-[10px] w-[16px]"
                   name="agreement"
                   id="agreement"
                   data-testid="checkbox-input-terms-and-service-0"
                   type="checkbox"
-                  aria-checked="true"
+                  checked={agreedOnPolicy}
+                  onChange={() => setAgreedOnPolicy(!agreedOnPolicy)}
                 />
                 <p>
-                By continuing I agree to the&nbsp;
-                <Link href="/policy/en" className="font-medium text-purple">
-                  Terms of Service
-                </Link>
-                &nbsp;and&nbsp;
-                <Link href="/policy/en" className="font-medium text-purple">
-                  Privacy Policy.
-                </Link>
-
+                  By continuing I agree to the&nbsp;
+                  <Link href="/policy/en" className="font-medium text-purple">
+                    Terms of Service
+                  </Link>
+                  &nbsp;and&nbsp;
+                  <Link href="/policy/en" className="font-medium text-purple">
+                    Privacy Policy.
+                  </Link>
                 </p>
               </div>
-              <div className="flex flex-row-reverse">
+              <div
+                className={`flex flex-row-reverse ${
+                  !countriesVisible && !statesVisible ? 'block' : 'hidden'
+                }`}
+              >
                 <ARoundedPurple
-                  additionalClassName=" lg:w-auto w-full"
+                  additionalClassName={`${
+                    email === '' ||
+                    password === '' ||
+                    username === '' ||
+                    currentCountry.id === '' ||
+                    (currentCountry.id === 'US' && currentState.id === '') ||
+                    !agreedOnPolicy
+                      ? 'disabled-a'
+                      : 'enabled-a'
+                  } lg:w-auto w-full "`}
                   text="Create account"
                   onclick={() =>
                     console.log({

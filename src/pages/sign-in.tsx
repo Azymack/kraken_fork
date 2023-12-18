@@ -21,7 +21,7 @@ const SignIn = () => {
         <SignHeader>
           <BareLogo />
           <div className="ml-auto flex items-center gap-1 border-purple">
-            <LangCombo />
+            <LangCombo selectedColor=" text-purple " />
             <ARoundedTransparentAtSignIn
               additionalClassName=" sign-in-button text-purple border-purple py-[6px] px-[22px] ml-2 common-sign-upin-button"
               text="Create account"
