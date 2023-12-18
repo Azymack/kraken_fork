@@ -649,14 +649,25 @@
     }
   }
 
+  .enabled-a {
+    transition: background .25s ease-in-out,border .25s ease-in-out,color .25s ease-in-out;
+  }
+
   .disabled-a {
     cursor: auto;
     background-color: #ded9f7!important;
+    transition: background .25s ease-in-out,border .25s ease-in-out,color .25s ease-in-out;
   }
 
   .sign-content-h1 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  .sign-in-button:hover {
+    color: #eeecfb!important;
+    border-color: #eeecfb;
+    background-color: #2824b6!important;
   }
 
   .sign-content-h1 {

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 import { ARoundedPurple } from '@/components/Buttons/ARoundedPurple';
-import { ARoundedTransparent } from '@/components/Buttons/ARoundedTransparent';
+import { ARoundedTransparentAtSignIn } from '@/components/Buttons/ARoundedTransparentAtSignIn';
 import { MelaniInput } from '@/components/Inputs/MelaniInput';
 import { BareLogo } from '@/components/SignUpIn/BareLogo';
 import { CenterSkeleton } from '@/components/SignUpIn/CenterSkeleton';
@@ -22,8 +22,8 @@ const SignIn = () => {
           <BareLogo />
           <div className="ml-auto flex items-center gap-1 border-purple">
             <LangCombo />
-            <ARoundedTransparent
-              additionalClassName="text-purple border-purple py-[6px] px-[22px] ml-2 common-sign-upin-button"
+            <ARoundedTransparentAtSignIn
+              additionalClassName=" sign-in-button text-purple border-purple py-[6px] px-[22px] ml-2 common-sign-upin-button"
               text="Create account"
               href="/sign-up"
             />
@@ -79,7 +79,7 @@ const SignIn = () => {
               text="Sign in"
               // onclick={}
               additionalClassName={`${
-                email === '' || password === '' ? 'disabled-a' : ''
+                email === '' || password === '' ? 'disabled-a' : 'enabled-a'
               } py-[8px] min-w-[180px] "`}
               href="#"
             />
