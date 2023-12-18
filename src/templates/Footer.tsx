@@ -6,7 +6,7 @@ import { MelaniWrapper } from '@/layout/MelaniWrapper';
 
 const Footer = () => (
   <footer className="pb-[160px]  text-[14px] leading-[24px] lg:pt-[88px]">
-    <div className="box-border w-full px-[30px] min-[1040px]:px-[calc((100%-980px)/2)]">
+    <div className="box-border w-full px-0 lg:px-[30px] min-[1040px]:px-[calc((100%-980px)/2)]">
       <MelaniWrapper>
         <div className="footer-menus">
           <div className="footer-sign-in w-[240px]">

@@ -11,13 +11,13 @@ const KrakenPro = () => {
         <MelaniWrapper>
           <VerticalSpacerInPixel pixel="h-[76px]" />
           <MelaniComponent>
-            <h2 className="text-center text-[18px] font-medium leading-[25px] tracking-[2px] text-white">
+            <h2 className="text-center text-[14px] font-medium leading-[20px] tracking-[2px] text-white lg:text-[18px] lg:leading-[25px]">
               KRAKEN PRO
             </h2>
           </MelaniComponent>
           <VerticalSpacerInPixel pixel="h-[24px]" />
           <MelaniComponent>
-            <h2 className="text-center text-[40px] font-medium leading-[54px] text-white">
+            <h2 className="text-center text-[32px] font-medium leading-[42px] text-white lg:text-[40px] lg:leading-[54px]">
               Trade spot and margin. <br />
               All in one powerful interface.
             </h2>
@@ -25,10 +25,10 @@ const KrakenPro = () => {
           <VerticalSpacerInPixel pixel="h-[48px]" />
           <MelaniImage
             srcPath="/assets/images/statistics-2512x1608.png"
-            additionalClassName="w-full h-auto"
+            additionalClassName=" lg:block hidden w-full h-auto"
           />
           <MelaniComponent>
-            <div className="mt-[-80px] w-full"></div>
+            <div className=" mt-0 w-full lg:mt-[-80px]"></div>
           </MelaniComponent>
           <MelaniComponent>
             <div className="stat-div">

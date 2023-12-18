@@ -24,7 +24,7 @@ const ForEveryone = () => {
           <div className="h-[84px] w-full"></div>
         </MelaniComponent>
         <MelaniComponent>
-          <h2 className=" text-center  text-[40px] font-medium leading-[64px] text-purple">
+          <h2 className=" text-center text-[34px] font-medium leading-[42px] text-purple lg:text-[40px] lg:leading-[64px]">
             <span>Kraken is a crypto exchange for everyone</span>
           </h2>
         </MelaniComponent>

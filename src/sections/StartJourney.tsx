@@ -13,7 +13,7 @@ const StartJourney = () => {
             <VerticalSpacerInPixel pixel="h-[64px]" />
             <TextBigPurple text="Start your crypto journey" />
             <VerticalSpacerInPixel pixel="h-[24px]" />
-            <div className="text-center  text-[32px] font-normal leading-[42px] text-black">
+            <div className="text-center text-[16px] font-normal leading-[19px] text-black lg:text-[32px] lg:leading-[42px]">
               <p>
                 Kraken makes it easy to get started. Sign up today to{' '}
                 <strong>buy and sell 200+ cryptocurrencies</strong>.
@@ -32,7 +32,7 @@ const StartJourney = () => {
               <img
                 src="/assets/images/crypto-journey-1040x880.png"
                 alt=""
-                className=""
+                className=" w-[40%]"
               />
             </div>
           </MelaniComponent>
