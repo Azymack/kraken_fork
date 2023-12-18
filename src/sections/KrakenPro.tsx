@@ -11,17 +11,24 @@ const KrakenPro = () => {
         <MelaniWrapper>
           <VerticalSpacerInPixel pixel="h-[76px]" />
           <MelaniComponent>
-            <h2 className="text-center font-celias text-[18px] font-medium leading-[25px] tracking-[2px] text-white">
+            <h2 className="text-center text-[18px] font-medium leading-[25px] tracking-[2px] text-white">
               KRAKEN PRO
             </h2>
           </MelaniComponent>
           <VerticalSpacerInPixel pixel="h-[24px]" />
+          <MelaniComponent>
+            <h2 className="text-center text-[40px] font-medium leading-[54px] text-white">
+              Trade spot and margin. <br />
+              All in one powerful interface.
+            </h2>
+          </MelaniComponent>
+          <VerticalSpacerInPixel pixel="h-[48px]" />
           <MelaniImage
             srcPath="/assets/images/statistics-2512x1608.png"
             additionalClassName="w-full h-auto"
           />
           <MelaniComponent>
-            <div className="-mt-[80px] w-full"></div>
+            <div className="mt-[-80px] w-full"></div>
           </MelaniComponent>
           <MelaniComponent>
             <div className="stat-div">
@@ -32,11 +39,11 @@ const KrakenPro = () => {
                   className="m-auto block h-[58px] w-auto text-center"
                 />
                 <VerticalSpacerInPixel pixel="h-[10px]" />
-                <h3 className="text-center font-celias text-[24px] font-medium leading-[32px] text-white">
+                <h3 className="text-center text-[24px] font-medium leading-[32px] text-white">
                   <span>Low&nbsp;spreads</span>
                 </h3>
                 <VerticalSpacerInPixel pixel="h-[8px]" />
-                <div className="text-center font-celias text-[16px] font-medium leading-[26px] text-white">
+                <div className="text-center text-[16px] font-normal leading-[26px] text-white">
                   <p>
                     Lower your average
                     <br />
@@ -51,11 +58,11 @@ const KrakenPro = () => {
                   className="m-auto block h-[58px] w-auto text-center"
                 />
                 <VerticalSpacerInPixel pixel="h-[10px]" />
-                <h3 className="text-center font-celias text-[24px] font-medium leading-[32px] text-white">
+                <h3 className="text-center text-[24px] font-medium leading-[32px] text-white">
                   <span>Deep liquidity across markets</span>
                 </h3>
                 <VerticalSpacerInPixel pixel="h-[8px]" />
-                <div className="text-center font-celias text-[16px] font-medium leading-[26px] text-white">
+                <div className="text-center text-[16px] font-normal leading-[26px] text-white">
                   <p>
                     Easily trade large volumes
                     <br />
@@ -70,11 +77,11 @@ const KrakenPro = () => {
                   className="m-auto block h-[58px] w-auto text-center"
                 />
                 <VerticalSpacerInPixel pixel="h-[10px]" />
-                <h3 className="text-center font-celias text-[24px] font-medium leading-[32px] text-white">
+                <h3 className="text-center text-[24px] font-medium leading-[32px] text-white">
                   <span>High&nbsp;rate&nbsp;limits</span>
                 </h3>
                 <VerticalSpacerInPixel pixel="h-[8px]" />
-                <div className="text-center font-celias text-[16px] font-medium leading-[26px] text-white">
+                <div className="text-center text-[16px] font-normal leading-[26px] text-white">
                   <p>
                     Trade crypto fast with our robust,
                     <br />

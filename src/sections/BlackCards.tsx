@@ -21,14 +21,14 @@ const BlackCards = () => {
                   className="m-auto block h-[32px] w-auto"
                 />
                 <VerticalSpacerInPixel pixel="h-[32px]" />
-                <div className="text-center font-celias text-[18px] font-normal leading-[28px] text-white">
+                <div className="text-center  text-[18px] font-normal leading-[28px] text-white">
                   <p>
                     Place advanced orders on-the-go
                     with&nbsp;the&nbsp;Kraken&nbsp;Pro&nbsp;app.
                   </p>
                 </div>
                 <VerticalSpacerInPixel pixel="h-[38px]" />
-                <div className="text-center font-celias text-[16px] font-normal leading-[20px] text-white">
+                <div className="text-center  text-[16px] font-normal leading-[20px] text-white">
                   <Link
                     target="_blank"
                     href="https://krakenpro.app.link/homepage-pro-section"
@@ -48,7 +48,7 @@ const BlackCards = () => {
                   className="m-auto block h-[32px] w-auto"
                 />
                 <VerticalSpacerInPixel pixel="h-[32px]" />
-                <div className="text-center font-celias text-[18px] font-normal leading-[28px] text-white">
+                <div className="text-center  text-[18px] font-normal leading-[28px] text-white">
                   <p>
                     Trade with up
                     <br />
@@ -56,7 +56,7 @@ const BlackCards = () => {
                   </p>
                 </div>
                 <VerticalSpacerInPixel pixel="h-[38px]" />
-                <div className="text-center font-celias text-[16px] font-normal leading-[20px] text-white">
+                <div className="text-center  text-[16px] font-normal leading-[20px] text-white">
                   <Link
                     target="_blank"
                     href="https://www.kraken.com/features/margin-trading/"
@@ -76,12 +76,12 @@ const BlackCards = () => {
                   className="m-auto block h-[32px] w-auto"
                 />
                 <VerticalSpacerInPixel pixel="h-[32px]" />
-                <div className="text-center font-celias text-[18px] font-normal leading-[28px] text-white">
+                <div className="text-center  text-[18px] font-normal leading-[28px] text-white">
                   <p>Trade 100+ multi-collateral</p>
                   <p>futures contracts.</p>
                 </div>
                 <VerticalSpacerInPixel pixel="h-[38px]" />
-                <div className="text-center font-celias text-[16px] font-normal leading-[20px] text-white">
+                <div className="text-center  text-[16px] font-normal leading-[20px] text-white">
                   <Link
                     target="_blank"
                     href="https://www.kraken.com/features/futures"

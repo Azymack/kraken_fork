@@ -5,7 +5,7 @@ import { ARoundedWhite } from '@/components/Buttons/ARoundedWhite';
 import { MelaniWrapper } from '@/layout/MelaniWrapper';
 
 const Footer = () => (
-  <footer className="pb-[160px] font-celias text-[14px] leading-[24px] lg:pt-[88px]">
+  <footer className="pb-[160px]  text-[14px] leading-[24px] lg:pt-[88px]">
     <div className="box-border w-full px-[30px] min-[1040px]:px-[calc((100%-980px)/2)]">
       <MelaniWrapper>
         <div className="footer-menus">
@@ -17,7 +17,7 @@ const Footer = () => (
                 </Link>
               </div>
             </div>
-            <p className="mb-[26px] font-celias text-[22px] font-medium leading-[32px] text-[#C0B9FF]">
+            <p className="mb-[26px]  text-[22px] font-medium leading-[32px] text-[#C0B9FF]">
               Take your crypto trading to the next level.
             </p>
             <div className="signin-2">

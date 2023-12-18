@@ -83,7 +83,7 @@ const StakingCrypto = () => {
       <MelaniWrapper>
         <VerticalSpacerInPixel pixel="h-[64px]" />
         <div className="text-center">
-          <h2 className="text-center font-celias text-[18px] font-medium leading-[25px] tracking-[2px] text-black">
+          <h2 className="text-center  text-[18px] font-medium leading-[25px] tracking-[2px] text-black">
             <span>STAKING CRYPTO</span>
           </h2>
         </div>
@@ -91,7 +91,7 @@ const StakingCrypto = () => {
         <TextBigPurple text="Earn crypto rewards" />
         <VerticalSpacerInPixel pixel="h-[16px]" />
         <div className="text-center">
-          <h2 className="text-center font-celias text-[16px] font-normal leading-[24px] text-black">
+          <h2 className="text-center  text-[16px] font-normal leading-[24px] text-black">
             <p>
               Earn up to 24% in rewards annually by staking your assets with
               Kraken. It only takes a few clicks to stake.*
@@ -100,7 +100,7 @@ const StakingCrypto = () => {
         </div>
         <VerticalSpacerInPixel pixel="h-[16px]" />
         <div className="text-center">
-          <h2 className="text-center font-celias text-[16px] font-normal leading-[28px] text-black">
+          <h2 className="text-center  text-[16px] font-normal leading-[28px] text-black">
             <p>
               <a
                 className=" font-bold text-purple"
@@ -155,7 +155,7 @@ const StakingCrypto = () => {
                 className="m-auto block h-[58px] w-auto text-center"
               />
               <VerticalSpacerInPixel pixel="h-[10px]" />
-              <div className="text-center font-celias text-[24px] font-medium leading-[32px] text-black">
+              <div className="text-center text-[24px] font-medium leading-[32px] text-black">
                 <p>
                   12+ assets
                   <br />
@@ -170,7 +170,7 @@ const StakingCrypto = () => {
                 className="m-auto block h-[58px] w-auto text-center"
               />
               <VerticalSpacerInPixel pixel="h-[10px]" />
-              <div className="text-center font-celias text-[24px] font-medium leading-[32px] text-black">
+              <div className="text-center text-[24px] font-medium leading-[32px] text-black">
                 <p>
                   Up to 24% in
                   <br />
@@ -185,7 +185,7 @@ const StakingCrypto = () => {
                 className="m-auto block h-[58px] w-auto text-center"
               />
               <VerticalSpacerInPixel pixel="h-[10px]" />
-              <div className="text-center font-celias text-[24px] font-medium leading-[32px] text-black">
+              <div className="text-center text-[24px] font-medium leading-[32px] text-black">
                 <p>
                   $100M+ in rewards
                   <br />
