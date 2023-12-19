@@ -13,7 +13,7 @@ const CryptoMakesGo = () => {
           <MelaniComponent>
             <div className="world-go-bg">
               <MelaniComponent>
-                <div className=" border-box relative mx-auto max-w-[640px]">
+                <div className=" border-box relative mx-auto max-w-[620px]">
                   <MelaniComponent>
                     <h3 className="text-center font-gts text-[20px] font-normal leading-[26px] text-black lg:text-[36px] lg:leading-[53px]">
                       <span>Money makes the world go round</span>

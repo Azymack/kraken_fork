@@ -13,7 +13,6 @@ import { WhyKrakenItem } from '@/components/Header/WhyKrakenItem';
 import { Hamburger } from '@/components/SVG/Hamburger';
 import { Times } from '@/components/SVG/Times';
 
-// const
 const exploreItems = [
   {
     title: 'Buy Crypto',
@@ -315,7 +314,6 @@ const Header = () => {
                             href={item.href}
                             title={item.title}
                             srcPath={`${item.iconName}${item.iconType}`}
-                            // className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           />
                         ))}
                       </Disclosure.Panel>

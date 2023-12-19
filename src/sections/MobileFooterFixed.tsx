@@ -4,8 +4,8 @@ import { MelaniComponent } from '@/layout/MelaniComponent';
 const MobileFooterFixed = () => {
   return (
     <MelaniComponent>
-      <div className="z-1000 relative block lg:hidden">
-        <div className=" fixed bottom-0 left-0 w-full bg-purple text-center">
+      <div className="relative z-50 block lg:hidden">
+        <div className=" fixed bottom-0 left-0 z-50 w-full bg-purple text-center">
           <div className=" flex h-[90px] flex-row items-center justify-center">
             <div className=" -indent-99999 relative ml-[10px] h-[63px] w-[63px] bg-[url(/assets/images/mobile-app.svg)] bg-contain bg-center bg-no-repeat text-transparent"></div>
             <div className="mx-[10px] flex flex-col items-start text-white">
