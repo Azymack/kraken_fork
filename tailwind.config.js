@@ -24,8 +24,8 @@ module.exports = {
         'celias-black': ['Celia-Black', 'sans-serif'],
         'celias-thin': ['Celia-Thin', 'sans-serif'],
         plexsans: ['IBM Plex Sans', 'sans-serif'],
+        gcb: ['GT Condensed Bold', { fontVariationSettings: '"wdth" 61' }],
         gts: ['GT Standard S'],
-        gcb: ['GT Condensed Bold'],
       },
       colors: {
         purple: '#5741d9',

@@ -77,7 +77,6 @@ const SignIn = () => {
             </Link>
             <ARoundedPurple
               text="Sign in"
-              // onclick={}
               additionalClassName={`${
                 email === '' || password === '' ? 'disabled-a' : 'enabled-a'
               } py-[8px] min-w-[180px] "`}
